@@ -1,0 +1,54 @@
+
+<!--- Hero Section ====================================== -->
+
+
+<section id="slider" class="slider slider-dark">
+              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url({{ "/assets/Working-Space/snapshots/Working-Space.jpg" | relative_url}});"></div>
+              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="{{ "/assets/Working-Space/snapshots/Working-Space.jpg" | relative_url }}">
+              </video>
+			  <script type="text/javascript">
+			  document.addEventListener("DOMContentLoaded", function() {
+			  	setTimeout(function(){
+			  		document.querySelector('#slider video').innerHTML = `
+			  			<source src="{{ "/assets/Working-Space/MP4/Working-Space.mp4" | relative_url }}" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			  			<source src="{{ "/assets/Working-Space/WEBM/Working-Space.webm" | relative_url }}" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			  		`;
+			  	}, 10*1000);
+			  });
+			  </script>
+              <div class="pos-vertical-center">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12">
+                              <div class="slide-action mb-50"></div>
+                              <div id="slide--headline" class="slide--headline text-heading">
+                                <span class="typed-text" data-typed-string="Hi there!, Welcome to Latin Digital, We Empower Brands through superior technology, Make your self @ home
+                                "> </span>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-6">
+                              <div id="slide--bio" class="slide--bio text-heading">Build, Redesign, Outperform</div>
+                          </div>
+                      </div>
+
+
+
+                      <div class="slide-action" style="text-align:center; padding-bottom:30px;">
+                        <a class="btn btn--secondary btn--white mr-30" href="{{ "/blog/" | relative_url }}">Learn More<span class="for-readers"> in blog</span></a>
+                        <a class="btn btn--white btn--bordered" id="scrollToBottom" href="#">Get Started</a>   </div>
+                  </div>
+              </div>
+
+</section>
+
+
+
+
+
+<!--
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+ -->
