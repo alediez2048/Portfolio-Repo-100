@@ -64,8 +64,6 @@
 		  }
 
 	  </script>
-	  <link rel="manifest" href="manifest.json" />
-	  <meta name="theme-color" content="#086e4b">
 
     </head>
 
@@ -150,7 +148,7 @@
             </div>
           </div>
 
-            <a class="module-cancel" href="#"><i class="fa fa-close"></i><span class="for-readers">close</span></a>
+            <a class="module-cancel" href="#"><i class="fa fa-close"></i></a>
           </div>
 
         </div><!-- .module-search end -->
@@ -206,13 +204,8 @@
 
 </header>
 
-<!-- <div class="preloader">
-	<div class="spinner">
-	  <div class="bounce1"></div>
-	  <div class="bounce2"></div>
-	  <div class="bounce3"></div>
-	</div>
-</div><!-- Document Wrapper -->
+
+
 
 
 <!-- Page Title #5  -->
@@ -228,7 +221,7 @@
 			  			<source src="/assets/Working-Space/MP4/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
 			  			<source src="/assets/Working-Space/WEBM/Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
 			  		`;
-			  	}, 10*1000);
+			  	}, 5*1000);
 			  });
 			  </script>
 <div class="container">
@@ -448,7 +441,7 @@
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-                                    <a class="img-gallery-item" href="assets/images/portfolio/full/8.jpg" title="Portfolio Item"></a>
+                                    <a class="img-gallery-item" href="assets/images/portfolio/full/" title="Portfolio Item"></a>
                                 </div>
                                 <div class="portfolio--title">
 									<h4><a href="#">Sweet Leaf Tea</a></h4>
@@ -485,7 +478,7 @@
 			</div><!-- . portfolio-item end -->
 
 			<!-- Portfolio #10 -->
-			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
 				<div class="portfolio--img">
 					<img src="assets/images/portfolio/grid/3col/10.jpg" alt="Portfolio Item">
 					<div class="portfolio--hover">
@@ -504,10 +497,10 @@
 						</div><!-- .Portfolio-action end -->
 					</div><!-- .Portfolio-hover end -->
 				</div><!-- .Portfolio-img end -->
-			</div><!-- . portfolio-item end -->
+			</div><!-- . portfolio-item end --> -->
 
 			<!-- Portfolio #11 -->
-			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
 				<div class="portfolio--img">
 					<img src="assets/images/portfolio/grid/3col/11.jpg" alt="Portfolio Item">
 					<div class="portfolio--hover">
@@ -526,10 +519,10 @@
 						</div><!-- .Portfolio-action end -->
 					</div><!-- .Portfolio-hover end -->
 				</div><!-- .Portfolio-img end -->
-			</div><!-- . portfolio-item end -->
+			</div><!-- . portfolio-item end --> -->
 
 						<!-- Portfolio #12 -->
-			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
 				<div class="portfolio--img">
 					<img src="assets/images/portfolio/grid/3col/12.jpg" alt="Portfolio Item">
 					<div class="portfolio--hover">
@@ -548,7 +541,7 @@
 						</div><!-- .Portfolio-action end -->
 					</div><!-- .Portfolio-hover end -->
 				</div><!-- .Portfolio-img end -->
-			</div><!-- . portfolio-item end -->
+			</div><!-- . portfolio-item end --> -->
 
             <!-- Jekyll loop for assets\images\portfolio\grid\3col -->
             
@@ -801,11 +794,11 @@
     <!-- .container end -->
 </section>
 <!-- #portfolio end -->
-<div class="row" id="btn-more">
+<!-- <div class="row" id="btn-more">
     <div class="col-xs-12 col-sm-12 col-md-12 text--center mt-30">
         <a class="btn btn--secondary btn--bordered btn-more" href=""><span></span>Load More</a>
     </div>
-</div>
+</div> -->
 
 
 
@@ -878,12 +871,11 @@
 		"/css/external.css",
 		"/css/bootstrap.min.css",
 		"/css/main.css",
-		"/css/fonts.css",
 		"/css/patch-lighthouse.css",
 		"/revolution/css/settings.css",
 		"/revolution/css/layers.css",
 		"/revolution/css/navigation.css",
-		// "https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif"
+		"https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif"
 	];
 	files.forEach(function(href){
 		var node = document.createElement("link");
@@ -982,7 +974,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			var q = '(-o-min-device-pixel-ratio: 9/4), (-webkit-min-device-pixel-ratio: 2.25), (min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx)';
 	        if (window.matchMedia && window.matchMedia(q).matches) return true;
 		}
-	},5*1000);
+	},1*1000);
 });
 </script>
 <script type="text/javascript">
@@ -997,7 +989,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <script type="text/javascript">
   if('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('/js/sw.js')
+             .register('/sw.js')
              .then(function() { console.log("Service Worker Registered"); })
 			 .catch(function() {
 				 console.log("'/sw.js' not found, or something like this");

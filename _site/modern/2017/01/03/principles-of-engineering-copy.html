@@ -64,8 +64,6 @@
 		  }
 
 	  </script>
-	  <link rel="manifest" href="manifest.json" />
-	  <meta name="theme-color" content="#086e4b">
 
     </head>
 
@@ -150,7 +148,7 @@
             </div>
           </div>
 
-            <a class="module-cancel" href="#"><i class="fa fa-close"></i><span class="for-readers">close</span></a>
+            <a class="module-cancel" href="#"><i class="fa fa-close"></i></a>
           </div>
 
         </div><!-- .module-search end -->
@@ -206,13 +204,9 @@
 
 </header>
 
-<!-- <div class="preloader">
-	<div class="spinner">
-	  <div class="bounce1"></div>
-	  <div class="bounce2"></div>
-	  <div class="bounce3"></div>
-	</div>
-</div><!-- Document Wrapper -->
+
+
+
 
 <!-- Page Title #8 =============== -->
 
@@ -775,12 +769,11 @@
 		"/css/external.css",
 		"/css/bootstrap.min.css",
 		"/css/main.css",
-		"/css/fonts.css",
 		"/css/patch-lighthouse.css",
 		"/revolution/css/settings.css",
 		"/revolution/css/layers.css",
 		"/revolution/css/navigation.css",
-		// "https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif"
+		"https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif"
 	];
 	files.forEach(function(href){
 		var node = document.createElement("link");
@@ -877,7 +870,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			var q = '(-o-min-device-pixel-ratio: 9/4), (-webkit-min-device-pixel-ratio: 2.25), (min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx)';
 	        if (window.matchMedia && window.matchMedia(q).matches) return true;
 		}
-	},5*1000);
+	},1*1000);
 });
 </script>
 <script type="text/javascript">
@@ -892,7 +885,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <script type="text/javascript">
   if('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('/js/sw.js')
+             .register('/sw.js')
              .then(function() { console.log("Service Worker Registered"); })
 			 .catch(function() {
 				 console.log("'/sw.js' not found, or something like this");
