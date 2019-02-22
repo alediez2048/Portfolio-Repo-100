@@ -153,7 +153,7 @@
 
         </div><!-- .module-search end -->
         <!-- Module Side NAV -->
-        <div class="module module-side-nav pull-left">
+<!--         <div class="module module-side-nav pull-left">
 
           <div class="module-icon side-nav-icon">
             <i class="fa fa-bars"></i>
@@ -193,7 +193,7 @@
   </div>
 <a class="module-cancel" href="#"><i class="fa fa-close"></i><span class="for-readers">Close</span></a>
 </div>          </div>
-        </div>
+        </div> -->
       </div>
       <!-- /.navbar-collapse -->
     </div>
@@ -207,24 +207,15 @@
 
 
 
-
 <!--- Hero Section ====================================== -->
 
 
 <section id="slider" class="slider slider-dark">
-              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(/assets/Working-Space/snapshots/Working-Space.jpg);"></div>
-              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="/assets/Working-Space/snapshots/Working-Space.jpg">
+              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4);"></div>
+              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4">
+                  <source src="https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                  <source src="/https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
               </video>
-			  <script type="text/javascript">
-			  document.addEventListener("DOMContentLoaded", function() {
-			  	setTimeout(function(){
-			  		document.querySelector('#slider video').innerHTML = `
-			  			<source src="/assets/Working-Space/MP4/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-			  			<source src="/assets/Working-Space/WEBM/Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-			  		`;
-			  	}, 5*1000);
-			  });
-			  </script>
               <div class="pos-vertical-center">
                   <div class="container">
                       <div class="row">
@@ -250,8 +241,38 @@
 
 </section>
 
+<!-- 
+<section id="slider" class="slider slider-dark">
+              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(/assets/very-open-space/snapshots/very-open-space.jpg);"></div>
+              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="/assets/very-open-space/snapshots/very-open-space.jpg">
+                  <source src="/assets/very-open-space/MP4/very-open-space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                  <source src="/assets/very-open-space/WEBM/very-open-space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              </video>
+
+              <div class="pos-vertical-center">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12">
+                              <div class="slide-action mb-50"></div>
+                              <div id="slide--headline" class="slide--headline text-heading">
+                                <span class="typed-text" data-typed-string="Hi there!, Welcome to Latin Digital, We Empower Brands through superior technology, Make your self @ home
+                                "> </span>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-6">
+                              <div id="slide--bio" class="slide--bio text-heading">Product Developer, Digital Marketer and Ping Pong Master</div>
+                          </div>
+                      </div>
 
 
+
+                      <div class="slide-action" style="text-align:center; padding-bottom:30px;">
+                        <a class="btn btn--secondary btn--white mr-30" href="/blog/">Learn More</a>
+                        <a class="btn btn--white btn--bordered" id="scrollToBottom" href="#">Get Started</a>   </div>
+                  </div>
+              </div>
+
+</section> -->
 
 
 <!--
@@ -476,7 +497,9 @@ body {
                   <h4 style="font-size: 30px; text-align:center;" >Your Technology Partner</h4>
                   <p style="text-align:justify;text-justify=inter-word;">
 
-                    Latin Digital started out with the purpose to bridge the gap between Businesses and their Digital Blue Prints. We provide custom solutions and support using the latest technologies and frameworks in the industry. In this site you can see our previous work as well as learn more about our solutions. Reach out to us through the chatbot to learn more.
+                    Hello There! My name is Alejandro Diez, I'm a web developer based in Austin Texas and the creator of Latin Digital a full service nearshore digital shop. My purpose is to help you and your company successfully tame the web and all it has to offer by building custom technology for your business needs. To do this me and a dedicated team of developers, designers and project managers throuhgout Latin America have joined forced to build high performing digital products.
+
+                    <!-- Latin Digital started out with the purpose to bridge the gap between Businesses and their Digital Blue Prints. We provide custom solutions and support using the latest technologies and frameworks in the industry. In this site you can see our previous work as well as learn more about our solutions. Reach out to us through the chatbot to learn more. -->
 
 <!--
                     At Latin Digital we aim to bridge the gap between Latin Businesses and American Software and Design Standards. We recruit the best Latin American Talent from companies like IBM, Microsoft, Google to bring their expertise in the digital space to top Latin American companies.
@@ -601,6 +624,86 @@ padding-top:50px;
 	</div><!-- .container end -->
 
 </section><!-- .feature3 end -->
+
+
+<style>
+	
+.accordion .panel .panel--heading a.collapsed {
+    color: #ffffff;
+}
+
+.accordion .panel--heading .accordion-toggle.collapsed:after {
+    content: "\f067";
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+
+.accordion .panel .panel--body {
+    padding: 0 0 28px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+
+</style>
+
+<section id="cta5" class="cta cta-4 bg-overlay bg-overlay-theme2 text--center bg-green">
+	<!--div class="bg-section">
+			<img src="assets/images/cta/cta-1.jpg" alt="Background"/>
+	</div-->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<h3>Build Your Own Website Now!</h3>
+				<p>Our strategists will help you choose a plan that is custom for you.</p>
+				<a class="btn btn--white" href="#">Get Free Quote</a>
+			</div><!-- .col-md-6 end -->
+
+<div class="col-xs-6 col-sm-6 col-md-6">
+
+				<div class="accordion accordion-3" id="accordion03">
+					<!-- Panel 01 -->
+					<div class="panel">
+						<div class="panel--heading">
+							<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion03" href="#collapse03-1">Lightning Speed</a>
+						</div>
+						<div id="collapse03-1" class="panel--body panel-collapse collapse in">
+							Our proprietary combination of server technology paired with cdn use allows for the highest performance scores on Google.
+						</div>
+					</div>
+					
+					<!-- Panel 01 -->
+					<div class="panel">
+						<div class="panel--heading">
+							<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion03" href="#collapse03-2">Free Hosting</a>
+						</div>
+						<div id="collapse03-2" class="panel--body panel-collapse collapse">
+							Trends, vision dominates a lot of our subconscious interpretation of the world around us. On top it, pleasing images create a better user experience. Rounding up a bunch of specific designs.Trends, vision dominates a lot of our subconscious interpretation of the world around us. 
+						</div>
+					</div>
+					
+					<!-- Panel 03 -->
+					<div class="panel">
+						<div class="panel--heading">
+							<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion03" href="#collapse03-3">Unhackeable</a>
+						</div>
+						<div id="collapse03-3" class="panel--body panel-collapse collapse">
+							Trends, vision dominates a lot of our subconscious interpretation of the world around us. On top it, pleasing images create a better user experience. Rounding up a bunch of specific designs.Trends, vision dominates a lot of our subconscious interpretation of the world around us. 
+						</div>
+					</div>
+					
+				</div>
+
+
+</div>
+			
+		</div><!-- .row end -->
+	</div><!-- .container end -->
+</section><!-- #cta5 end -->
 
 
 
@@ -996,17 +1099,85 @@ padding-top:50px;
 
 </section><!-- .feature3 end -->
 
+<style>
+h5{
+	color:#ffffff;
+}
+</style>
+
 <section id="cta5" class="cta cta-4 bg-overlay bg-overlay-theme2 text--center bg-green">
 	<!--div class="bg-section">
 			<img src="assets/images/cta/cta-1.jpg" alt="Background"/>
 	</div-->
 	<div class="container">
 		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2">
+
+				<div class="skill">
+					<div class="rounded-skill" data-percent="80" data-width="11" data-color="#1bb580" data-size="166"data-line="square">
+						<div class="prcentage">
+							<span class="prcent">90</span>
+							<span class="symbol">%</span>
+						</div>
+						<!-- .prcentage end -->
+					</div>
+					<br>
+					<!-- .rounded-skill end -->
+					<div class="skill-name">
+						<h5>Performance</h5>
+					</div>
+					<!-- .skill-name end -->
+				</div>
+
+			</div>
+
+			<div class="col-xs-2 col-sm-2 col-md-2">
+
+				<div class="skill">
+					<div class="rounded-skill" data-percent="80" data-width="11" data-color="#1bb580" data-size="166"data-line="square">
+						<div class="prcentage">
+							<span class="prcent">90</span>
+							<span class="symbol">%</span>
+						</div>
+						<!-- .prcentage end -->
+					</div>
+					<br>
+					<!-- .rounded-skill end -->
+					<div class="skill-name">
+						<h5>Accesibility</h5>
+					</div>
+					<!-- .skill-name end -->
+				</div>
+
+			</div>
+
+			<div class="col-xs-2 col-sm-2 col-md-2">
+
+				<div class="skill">
+					<div class="rounded-skill" data-percent="80" data-width="11" data-color="#1bb580" data-size="166"data-line="square">
+						<div class="prcentage">
+							<span class="prcent">90</span>
+							<span class="symbol">%</span>
+						</div>
+						<!-- .prcentage end -->
+					</div>
+					<br>
+					<!-- .rounded-skill end -->
+					<div class="skill-name">
+						<h5>Best Practices</h5>
+					</div>
+					<!-- .skill-name end -->
+				</div>
+
+			</div>
+
+		
 			<div class="col-xs-6 col-sm-6 col-md-6">
-				<h3>Build Your Own Website Now!</h3>
-				<p>Our strategists will help you choose a plan that is custom for you.</p>
-				<a class="btn btn--white" href="#">Get Free Quote</a>
+				<h3>See for yourself</h3>
+				<p>Check out our Google Lightohouse Scores</p>
+				<a class="btn btn--white" href="#">Lighthouse Score</a>
 			</div><!-- .col-md-6 end -->
+			</div>
 			
 		</div><!-- .row end -->
 	</div><!-- .container end -->
