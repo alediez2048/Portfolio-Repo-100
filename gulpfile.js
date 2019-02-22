@@ -1,7 +1,10 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
+var compress    = require('compression');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+let cleanCSS    = require('gulp-clean-css');
+var gzip        = require('gulp-gzip');
 var cp          = require('child_process');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -31,7 +34,8 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
-            baseDir: '_site'
+            baseDir: '_site',
+            middleware: [compress()]
         }
     });
 });
@@ -46,7 +50,12 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+		.pipe(cleanCSS({compatibility: 'ie7'}))
         .pipe(gulp.dest('_site/css'))
+        // .pipe(gzip({
+		// 	threshold: 0,
+		// 	gzipOptions: { level: 5 }
+		// }))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
 });
@@ -57,7 +66,10 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('js/*.js', ['jekyll-rebuild']);
+    gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html',
+    'blog/*.html','search/*.html',
+    '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**

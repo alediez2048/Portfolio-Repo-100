@@ -1,0 +1,21 @@
+{
+    "name": "Latin Digital",
+    "short_name": "LatinDigital",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#086e4b",
+    "icons": [{
+        "src": "./assets/images/favicon/favicon-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    },{
+        "src": "./assets/images/favicon/favicon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    },{
+        "src": "./assets/images/favicon/favicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}

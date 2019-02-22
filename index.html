@@ -1,13 +1,24 @@
 ---
 layout: default
-title: Your New Jekyll Site
+type : homepage
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+{% include hero.html %}
+
+{% include workflow.html %}
+
+{% include panel.html %}
+
+{% include purchase.html %}
+
+{% include progress.html %}
+
+{% include portfolio.html %}
+
+{% include panel2.html %}
+
+{% include purchase2.html %}
+
+{% include testimonials.html %}
+
+{% include contact.html %}
