@@ -18,12 +18,12 @@
       <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
 
 	  <!-- https://developers.google.com/web/fundamentals/performance/resource-prioritization#preconnect -->
-	  <link rel="preconnect" href="https://translate.googleapis.com">
-	  <link rel="dns-prefetch" href="https://translate.googleapis.com">
+<!-- 	  <link rel="preconnect" href="https://translate.googleapis.com">
+	  <link rel="dns-prefetch" href="https://translate.googleapis.com"> -->
 
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118145960-1"></script>
+<!--       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118145960-1"></script> -->
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -209,13 +209,20 @@
 
 <!--- Hero Section ====================================== -->
 
-
 <section id="slider" class="slider slider-dark">
-              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4);"></div>
-              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4">
-                  <source src="https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                  <source src="/https://res.cloudinary.com/latin-digital/video/upload/v1550002574/Working-Space.mp4" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(/assets/Working-Space/snapshots/Working-Space.jpg);"></div>
+              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="/assets/Working-Space/snapshots/Working-Space.jpg">
               </video>
+        <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+          setTimeout(function(){
+            document.querySelector('#slider video').innerHTML = `
+              <source src="/assets/Working-Space/MP4/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="/assets/Working-Space/WEBM/Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            `;
+          }, 5*1000);
+        });
+        </script>
               <div class="pos-vertical-center">
                   <div class="container">
                       <div class="row">
@@ -1370,16 +1377,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 </script>
 
-<script type="text/javascript">
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('/sw.js')
-             .then(function() { console.log("Service Worker Registered"); })
-			 .catch(function() {
-				 console.log("'/sw.js' not found, or something like this");
-			 })
-  }
-</script>
+
 
 
 </html>

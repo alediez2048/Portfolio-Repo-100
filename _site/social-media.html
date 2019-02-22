@@ -18,12 +18,12 @@
       <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
 
 	  <!-- https://developers.google.com/web/fundamentals/performance/resource-prioritization#preconnect -->
-	  <link rel="preconnect" href="https://translate.googleapis.com">
-	  <link rel="dns-prefetch" href="https://translate.googleapis.com">
+<!-- 	  <link rel="preconnect" href="https://translate.googleapis.com">
+	  <link rel="dns-prefetch" href="https://translate.googleapis.com"> -->
 
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118145960-1"></script>
+<!--       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118145960-1"></script> -->
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -432,16 +432,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 </script>
 
-<script type="text/javascript">
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('/sw.js')
-             .then(function() { console.log("Service Worker Registered"); })
-			 .catch(function() {
-				 console.log("'/sw.js' not found, or something like this");
-			 })
-  }
-</script>
+
 
 
 </html>
