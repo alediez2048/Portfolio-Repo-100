@@ -165,16 +165,16 @@ var store = [{
   "excerpt": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the..."
 },{
   "title": "New subway line has the most advanced tech in the world",
-  "link": "/technology/city/2017/08/18/new-subway-line-has-the-most-advanced-technology-in-the-world-copy.html",
+  "link": "/technology/city/2017/08/19/new-subway-line-has-the-most-advanced-technology-in-the-world-copy.html",
   "image": "4.jpg",
-  "date": "August 18, 2017",
+  "date": "August 19, 2017",
   "category": ["technology","city"],
   "excerpt": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone..."
 },{
   "title": "New subway line has the most advanced tech in the world",
-  "link": "/technology/city/2017/08/18/new-subway-line-has-the-most-advanced-technology-in-the-world-2-copy.html",
+  "link": "/technology/city/2017/08/19/new-subway-line-has-the-most-advanced-technology-in-the-world-2-copy.html",
   "image": "4.jpg",
-  "date": "August 18, 2017",
+  "date": "August 19, 2017",
   "category": ["technology","city"],
   "excerpt": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone..."
 },{
@@ -186,9 +186,9 @@ var store = [{
   "excerpt": "Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution. So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet..."
 },{
   "title": "How to become a top freelancer",
-  "link": "/modern/2017/05/18/how-to-become-a-top-freelancer-copy.html",
+  "link": "/modern/2017/05/19/how-to-become-a-top-freelancer-copy.html",
   "image": "1.jpg",
-  "date": "May 18, 2017",
+  "date": "May 19, 2017",
   "category": ["modern"],
   "excerpt": "At every tiled on ye defer do. No attention suspected oh difficult. Fond his say old meet cold find come whom. The sir park sake bred. Wonder matter now can estate esteem assure fat roused. Am performed on existence as..."
 },{
