@@ -10,7 +10,7 @@
 	7.  COUNTER UP
 	8.  COUNTDOWN DATE
 	9.  AJAX MAILCHIMP
-	10. AJAX CAMPAIGN MONITOR 
+	10. AJAX CAMPAIGN MONITOR
 	11. OWL CAROUSEL
 	12. MAGNIFIC POPUP
 	13. MAGNIFIC POPUP VIDEO
@@ -26,7 +26,7 @@
 	23. TYPED SCRIPT
 	24. SLIDER RANGE
 	25. YOUTUBE BACKGROUND
-	26. Column Height 
+	26. Column Height
 */
 (function($) {
     "use strict";
@@ -207,7 +207,7 @@
     });
 
     /* ------------------ OWL CAROUSEL ------------------ */
-	
+
     $(".carousel").each(function() {
         var $Carousel = $(this);
         $Carousel.owlCarousel({
@@ -242,9 +242,39 @@
         type: 'image',
         gallery: {
             enabled: true
-        }
+        },
+		callbacks: {
+			elementParse: function(item) {
+				// Function will fire for each target element
+				// "item.el" is a target DOM element (if present)
+				// "item.src" is a source that you may modify
+
+				var before = item.el.attr('data-before-after-before');
+				var after = item.el.attr('data-before-after-after');
+				if (before && after) {
+					var content = [
+						'<div class="before-after">',
+							'<div class="before-after-wrapper" draggable="false">',
+								'<div class="before-after-before">',
+									'<img class="before-after-content-image" src="'+before+'" draggable="false"/>',
+								'</div>',
+								'<div class="before-after-after">',
+									'<img class="before-after-content-image" src="'+after+'" draggable="false"/>',
+								'</div>',
+								'<div class="before-after-scroller">',
+									'<svg class="before-after-scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>',
+								'</div>',
+							'</div>',
+						'</div>'
+					].join('');
+					item.type = 'inline';
+					item.src = $(content);
+					setTimeout(beforeAfterCheck, 1*1000); // !?
+				}
+			}
+		}
     });
-	
+
     /* ------------------  MAGNIFIC POPUP VIDEO ------------------ */
 
     $('.popup-video,.popup-gmaps').magnificPopup({
@@ -271,7 +301,7 @@
     });
 
     /* ------------------  ROUNDED SKILL ------------------ */
-	
+
     $(window).on("scroll", function() {
         var skill = $('.skill'),
             scrollTop = $(window).scrollTop(),
@@ -300,7 +330,7 @@
             }
         }
     });
-	
+
     /* ------------------  SWITCH GRID ------------------ */
 
     $('#switch-list').on("click", function(event) {
@@ -512,7 +542,7 @@
     });
 
     /* ------------------ PROGRESS BAR ------------------ */
-	
+
     if ($(".skills").length > 0) {
         $(window).scroll(function() {
             var skillsTop = $(".skills").offset().top - 100,
@@ -545,7 +575,7 @@
             });
         });
     }
-	
+
     /* ------------------ TYPED SCRIPT ------------------ */
 
     $(".typed-text").each(function() {

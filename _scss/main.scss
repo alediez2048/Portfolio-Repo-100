@@ -6291,17 +6291,29 @@ a.next-section:hover {
 
 .portfolio--zoom a {
     display: inline-block;
-    position: relative
+    position: relative;
+	height: 10em;
+	width: 100%;
+	margin-bottom: -30px;
 }
 
+.portfolio--zoom a:before, .portfolio--zoom a:after {
+	transition: width 0.1s linear, height 0.1s linear, margin 0.1s linear;
+	transition-delay: 0.2s, 0.2s, 0.2s;
+}
 .portfolio--zoom a:before {
     position: absolute;
     content: "";
-    left: -10px;
-    top: 0;
+    left: 50%;
+    top: 50%;
     width: 20px;
     height: 1px;
-    background-color: #1bb580
+    background-color: #1bb580;
+	margin: 0 0 0 -10px;
+}
+.portfolio--zoom a:hover:before {
+	width: 40px;
+	margin: 0 0 0 -20px;
 }
 
 .portfolio--zoom a:after,
@@ -6313,9 +6325,15 @@ a.next-section:hover {
 
 .portfolio--zoom a:after {
     position: absolute;
-    top: -10px;
+	left: 50%;
+    top: 50%;
     width: 1px;
-    height: 20px
+    height: 20px;
+	margin: -10px 0 0 0;
+}
+.portfolio--zoom a:hover:after {
+	height: 40px;
+	margin: -20px 0 0 0;
 }
 
 .col-md-5ths.portfolio-item .portfolio--title h4 {
