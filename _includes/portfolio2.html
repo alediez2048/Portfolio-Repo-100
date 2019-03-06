@@ -240,7 +240,7 @@ function beforeAfterCheck_once(container) {
 		if (!scroller) return;
 		active = true;
 		scroller.classList.add('scrolling');
-	}, {passive: true});
+	}, {passive: true}); 
 	document.body.addEventListener('touchend',function(e){
 		if (!scroller) return;
 		active = false;
