@@ -42,7 +42,7 @@
 
 
 
-<div class="before-after">
+<!--div class="before-after">
 	<div class="before-after-wrapper" draggable="false">
 		<div class="before-after-before">
 			<img class="before-after-content-image" src="{{ "/assets/images/portfolio/before-after/test-before.jpg" | relative_url }}" draggable="false"/>
@@ -54,7 +54,7 @@
 			<svg class="before-after-scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>
 		</div>
 	</div>
-</div>
+</div-->
 <style>
 .before-after {
 	margin: 50px 0;
@@ -240,17 +240,23 @@ function beforeAfterCheck_once(container) {
 		if (!scroller) return;
 		active = true;
 		scroller.classList.add('scrolling');
-	});
-	document.body.addEventListener('touchend',function(){
+	}, {passive: true});
+	document.body.addEventListener('touchend',function(e){
 		if (!scroller) return;
 		active = false;
 		scroller.classList.remove('scrolling');
-	});
+		e.preventDefault();
+	}, {passive: false});
 	document.body.addEventListener('touchcancel',function(){
 		if (!scroller) return;
 		active = false;
 		scroller.classList.remove('scrolling');
 	});
+	document.body.addEventListener('touchmove',function(e){
+		if (!scroller) return;
+		if (!active) return;
+		e.preventDefault();
+	}, {passive: false});
 	document.body.addEventListener('touchmove',function(e){
 		if (!scroller) return;
 		if (!active) return;
