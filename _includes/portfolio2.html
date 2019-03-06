@@ -75,14 +75,10 @@
 	height: 900px;
 	position: relative;
 	margin: 0 auto;
-	/*
-	position: absolute;
-	left:50%;
-	top:50%;
-	transform:translate3d(-50%,-50%,0);
-	*/
 	overflow:hidden;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	max-width: 96vw;
+	max-height: 96vw;
 }
 
 /* Our image information */
@@ -151,6 +147,10 @@
 	z-index: 30;
 	transition:0.1s;
 }
+.before-after-scroller:before, .before-after-scroller:after {
+	/* border: 0px solid #666; */
+	/* border-width: 0px 1px; */
+}
 .before-after-scroller:before{
 	top:100%;
 }
@@ -160,75 +160,98 @@
 
 /* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
 .before-after-scroller{
-	border: 5px solid #fff;
+	/* border: 5px solid #fff; */
+	background: #fff;
 }
 .before-after-scroller:before,
 .before-after-scroller:after{
 	background: #fff;
 }
+.before-after .before-after-scroller, .before-after .before-after-scroller:before, .before-after .before-after-scroller:after {
+	transition: background-color 0.5s linear;
+}
+.before-after.is-new .before-after-scroller, .before-after.is-new .before-after-scroller:before, .before-after.is-new .before-after-scroller:after {
+	background: #086e4b;
+}
+.before-after .before-after-scroller__thumb {
+	transition: width 0.5s linear, height 0.5s linear, margin 0.5s linear;
+}
+.before-after.is-new .before-after-scroller__thumb {
+	width: 200%;
+	height: 110%;
+	margin-left: -50%;
+	margin-top: -5%;
+}
 </style>
 <script type="text/javascript">
-function beforeAfterCheck() {
+function beforeAfterCheck(inside) {
 	// https://codepen.io/nosurprisethere/pen/xrXjYV
-	// I hope this over-commenting helps. Let's do this!
-	// Let's use the 'active' variable to let us know when we're using it
-	let active = false;
-
-	// First we'll have to set up our event listeners
-	// We want to watch for clicks on our scroller
-	document.querySelector('.before-after-scroller').addEventListener('mousedown',function(){
+	Array.from((inside||document).querySelectorAll('.before-after')).forEach(function(container) {
+		beforeAfterCheck_once(container);
+	});
+}
+function beforeAfterCheck_once(container) {
+	// https://codepen.io/nosurprisethere/pen/xrXjYV
+	if (!beforeAfterCheck_once._container) beforeAfterCheck_once._container = [];
+	if (beforeAfterCheck_once._container.indexOf(container)>-1) return;
+	beforeAfterCheck_once._container.push(container);
+	console.log(container);
+	var active = false;
+	setTimeout(function() {
+		if (active) return;
+		if (container) container.classList.add('is-new');
+	}, 1*1000);
+	setTimeout(function() {
+		if (container) container.classList.remove('is-new');
+	}, 3*1000);
+	var scroller = container.querySelector('.before-after-scroller');
+	scroller.addEventListener('mousedown',function(){
+		if (!scroller) return;
 		active = true;
 		// Add our scrolling class so the scroller has full opacity while active
-		document.querySelector('.before-after-scroller').classList.add('scrolling');
+		scroller.classList.add('scrolling');
 	});
-	// We also want to watch the body for changes to the state,
-	// like moving around and releasing the click
-	// so let's set up our event listeners
 	document.body.addEventListener('mouseup',function(){
+		if (!scroller) return;
 		active = false;
-		document.querySelector('.before-after-scroller').classList.remove('scrolling');
+		scroller.classList.remove('scrolling');
 	});
-	document.body.addEventListener('mouseleave',function(){
+	document.body.addEventListener('mouseleave',function(){ // khm)
+		if (!scroller) return;
 		active = false;
-		document.querySelector('.before-after-scroller').classList.remove('scrolling');
+		scroller.classList.remove('scrolling');
 	});
-
-	// Let's figure out where their mouse is at
 	document.body.addEventListener('mousemove',function(e){
+		if (!scroller) return;
 		if (!active) return;
 		// Their mouse is here...
 		let x = e.pageX;
 		// but we want it relative to our wrapper
-		x -= document.querySelector('.before-after-wrapper').getBoundingClientRect().left;
+		x -= container.querySelector('.before-after-wrapper').getBoundingClientRect().left;
 		// Okay let's change our state
 		scrollIt(x);
 	});
-
-	// Let's use this function
 	function scrollIt(x){
-		let transform = Math.max(0,(Math.min(x,document.querySelector('.before-after-wrapper').offsetWidth)));
-		document.querySelector('.before-after-after').style.width = transform+"px";
-		document.querySelector('.before-after-scroller').style.left = transform-25+"px";
+		let transform = Math.max(0,(Math.min(x,container.querySelector('.before-after-wrapper').offsetWidth)));
+		container.querySelector('.before-after-after').style.width = transform+"px";
+		container.querySelector('.before-after-scroller').style.left = transform-25+"px";
 	}
-
-	// Let's set our opening state based off the width,
-	// we want to show a bit of both images so the user can see what's going on
-	scrollIt(150);
-
-	// And finally let's repeat the process for touch events
-	// first our middle scroller...
-	document.querySelector('.before-after-scroller').addEventListener('touchstart',function(){
+	scroller.addEventListener('touchstart',function(){
+		if (!scroller) return;
 		active = true;
-		document.querySelector('.before-after-scroller').classList.add('scrolling');
+		scroller.classList.add('scrolling');
 	});
 	document.body.addEventListener('touchend',function(){
+		if (!scroller) return;
 		active = false;
-		document.querySelector('.before-after-scroller').classList.remove('scrolling');
+		scroller.classList.remove('scrolling');
 	});
 	document.body.addEventListener('touchcancel',function(){
+		if (!scroller) return;
 		active = false;
-		document.querySelector('.before-after-scroller').classList.remove('scrolling');
+		scroller.classList.remove('scrolling');
 	});
+	scrollIt(150);
 }
 beforeAfterCheck();
 </script>
@@ -265,10 +288,10 @@ beforeAfterCheck();
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
 								<a
-									class="img-gallery-item" href="assets/images/portfolio/full/1.jpg" title="Portfolio Item"
+									class="img-gallery-item" href="assets/images/portfolio/full/1.jpg" data-title="Portfolio Item"
 									data-before-after-before="{{ "/assets/images/portfolio/before-after/test-before.jpg" | relative_url }}"
 									data-before-after-after="{{ "/assets/images/portfolio/before-after/test-after.jpg" | relative_url }}"
-								></a>
+								><span class="img-gallery-item-expand-text">Preview</span></a>
 
 								</div>
 								<div class="portfolio--title">
@@ -291,7 +314,11 @@ beforeAfterCheck();
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-									<a class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" title="Portfolio Item"></a>
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="{{ "/assets/images/portfolio/before-after/test-after.jpg" | relative_url }}"
+										data-before-after-after="{{ "/assets/images/portfolio/before-after/test-before.jpg" | relative_url }}"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
 
 									</div>
 									<div class="portfolio--title">
@@ -314,7 +341,8 @@ beforeAfterCheck();
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-									<a class="img-gallery-item" href="assets/images/portfolio/full/3.jpg" title="One of the most ambitious projects I got to be part of was the redesign of Springbox's client website. It required to collaborative effort of all departments within the agency, UX, UI, Analytics, Creative and Development, and a bold approach as to how we wanted to be perceived. The end result was a master piece full stack application built with jekyll and node.js that is today's standard of excellence in Austin Texas.">
+									<a class="img-gallery-item" href="assets/images/portfolio/full/3.jpg" data-title="One of the most ambitious projects I got to be part of was the redesign of Springbox's client website. It required to collaborative effort of all departments within the agency, UX, UI, Analytics, Creative and Development, and a bold approach as to how we wanted to be perceived. The end result was a master piece full stack application built with jekyll and node.js that is today's standard of excellence in Austin Texas.">
+										<span class="img-gallery-item-expand-text">Preview</span>
 									</a>
 									</div>
 									<div class="portfolio--title">
@@ -337,7 +365,8 @@ beforeAfterCheck();
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-									<a class="img-gallery-item" href="assets/images/portfolio/full/4.jpg" title="Portfolio Item"></a>
+									<a class="img-gallery-item" href="assets/images/portfolio/full/4.jpg" data-title="Portfolio Item">
+										<span class="img-gallery-item-expand-text">Preview</span></a>
 									</div>
 									<div class="portfolio--title">
 									<h4><a href="https://www.zephyrhillswater.com/home">Zephirhills</a></h4>
@@ -359,7 +388,9 @@ beforeAfterCheck();
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-										<a class="img-gallery-item" href="assets/images/portfolio/full/5.jpg" title="While working for Springbox Digital Partners I had the opportunity to work on a variety of web applications ranging from clients like Nestle and Tradewinds to Springbox itself. Mainly focused on the front-end working with Javascript, jQuery, Bootstrap, SCSS and also using dependency managers like Gulp, Grunt and Docker container technology for local development. "></a>
+										<a class="img-gallery-item" href="assets/images/portfolio/full/5.jpg" data-title="While working for Springbox Digital Partners I had the opportunity to work on a variety of web applications ranging from clients like Nestle and Tradewinds to Springbox itself. Mainly focused on the front-end working with Javascript, jQuery, Bootstrap, SCSS and also using dependency managers like Gulp, Grunt and Docker container technology for local development. ">
+											<span class="img-gallery-item-expand-text">Preview</span>
+										</a>
 										</div>
 										<div class="portfolio--title">
 									<h4><a href="https://www.polandspring.com/">Poland Springs</a></h4>
@@ -380,8 +411,10 @@ beforeAfterCheck();
 					<div class="portfolio--hover">
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
-																	<div class="portfolio--zoom">
-									<a class="img-gallery-item" href="assets/images/portfolio/full/6.jpg" title="Portfolio Item"></a>
+								<div class="portfolio--zoom">
+									<a class="img-gallery-item" href="assets/images/portfolio/full/6.jpg" data-title="Portfolio Item">
+										<span class="img-gallery-item-expand-text">Preview</span>
+									</a>
 									</div>
 									<div class="portfolio--title">
 									<h4><a href="https://www.arrowheadwater.com/">Arrowhead</a></h4>
@@ -403,9 +436,11 @@ beforeAfterCheck();
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-									<a class="img-gallery-item" href="assets/images/portfolio/full/7.jpg" title="DHMS is one of the leading Military Dental Care Provider in the nation. The DHMS team reached out for a web portal redesign that would better communicate to their customers their Solutions Portfolio. The website redesign was built using Jekyll, an exciting new CMS technology, Sass for styling and AWS for server side management. "></a>
-									</div>
-									<div class="portfolio--title">
+									<a class="img-gallery-item" href="assets/images/portfolio/full/7.jpg" data-title="DHMS is one of the leading Military Dental Care Provider in the nation. The DHMS team reached out for a web portal redesign that would better communicate to their customers their Solutions Portfolio. The website redesign was built using Jekyll, an exciting new CMS technology, Sass for styling and AWS for server side management. ">
+										<span class="img-gallery-item-expand-text">Preview</span>
+									</a>
+								</div>
+								<div class="portfolio--title">
 									<h4><a href="#">US Dental Solutions</a></h4>
 								</div>
 								<div class="portfolio--cat">
@@ -425,7 +460,7 @@ beforeAfterCheck();
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-                                    <a class="img-gallery-item" href="assets/images/portfolio/full/" title="Portfolio Item"></a>
+                                    <a class="img-gallery-item" href="assets/images/portfolio/full/" data-title="Portfolio Item"><span class="img-gallery-item-expand-text">Preview</span></a>
                                 </div>
                                 <div class="portfolio--title">
 									<h4><a href="#">Sweet Leaf Tea</a></h4>
@@ -447,7 +482,7 @@ beforeAfterCheck();
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
 								<div class="portfolio--zoom">
-                                    <a class="img-gallery-item" href="assets/images/portfolio/full/9.jpg" title="Portfolio Item"></a>
+                                    <a class="img-gallery-item" href="assets/images/portfolio/full/9.jpg" data-title="Portfolio Item"><span class="img-gallery-item-expand-text">Preview</span></a>
                                 </div>
                                 <div class="portfolio--title">
 									<h4><a href="https://madison.net/">Madison Industries</a></h4>

@@ -243,7 +243,24 @@
         gallery: {
             enabled: true
         },
+		image: {
+			titleSrc: function(item) {
+				return item.el.attr('data-title') || item.el.attr('title');
+			}
+		},
 		callbacks: {
+			open: function() {
+				// Will fire when this exact popup is opened
+				// this - is Magnific Popup object
+				for (var i=0, l=10; i<l; i++) {
+					setTimeout(beforeAfterCheck, 0.1*1000*i); // !?
+				}
+			},
+			change: function() {
+				for (var i=0, l=10; i<l; i++) {
+					setTimeout(beforeAfterCheck, 0.1*1000*i); // !?
+				}
+			},
 			elementParse: function(item) {
 				// Function will fire for each target element
 				// "item.el" is a target DOM element (if present)
@@ -252,7 +269,7 @@
 				var before = item.el.attr('data-before-after-before');
 				var after = item.el.attr('data-before-after-after');
 				if (before && after) {
-					var content = [
+					var _content = [
 						'<div class="before-after">',
 							'<div class="before-after-wrapper" draggable="false">',
 								'<div class="before-after-before">',
@@ -262,14 +279,32 @@
 									'<img class="before-after-content-image" src="'+after+'" draggable="false"/>',
 								'</div>',
 								'<div class="before-after-scroller">',
-									'<svg class="before-after-scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>',
+									'<svg class="before-after-scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">',
+										'<polygon points="0 50 37 68 37 32 0 50" style="fill:#606060;stroke:#fff;stroke-width:2px;"/>',
+										'<polygon points="100 50 64 32 64 68 100 50" style="fill:#606060;stroke:#fff;stroke-width:2px;"/>',
+									'</svg>',
 								'</div>',
 							'</div>',
 						'</div>'
 					].join('');
+					var content = [
+						'<div class="mfp-figure for-before-after"><button title="Close (Esc)" type="button" class="mfp-close">×</button><figure>',
+						_content,
+						'<figcaption><div class="mfp-bottom-bar"><div class="mfp-title">',
+						item.el.attr('title') || ' ',
+						'</div</div></figcaption></figure></div>'
+					].join('');
 					item.type = 'inline';
-					item.src = $(content);
-					setTimeout(beforeAfterCheck, 1*1000); // !?
+					item.src = content;
+					item.title = '...';
+					// item.type = 'image';
+					// item.src = content;
+					// item.src = {
+					// 	image: {
+					// 		markup: content,
+					// 		titleSrc: 'title?',
+					// 	}
+					// }
 				}
 			}
 		}
