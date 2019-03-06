@@ -251,6 +251,17 @@ function beforeAfterCheck_once(container) {
 		active = false;
 		scroller.classList.remove('scrolling');
 	});
+	document.body.addEventListener('touchmove',function(e){
+		if (!scroller) return;
+		if (!active) return;
+		// Their mouse is here...
+		let x = ((e.changedTouches||e.touches)[0]||{}).pageX;
+		if (!x) return;
+		// but we want it relative to our wrapper
+		x -= container.querySelector('.before-after-wrapper').getBoundingClientRect().left;
+		// Okay let's change our state
+		scrollIt(x);
+	});
 	scrollIt(150);
 }
 beforeAfterCheck();
