@@ -1027,6 +1027,12 @@ ul.icon-list li i {
         -o-transform: perspective(1px) translateY(0);
         transform: perspective(1px) translateY(0)
     }
+	.portfolio-item .pos-vertical-center {
+	    -webkit-transform: perspective(1px) translateY(-50%);
+	    -moz-transform: perspective(1px) translateY(-50%);
+	    -o-transform: perspective(1px) translateY(-50%);
+	    transform: perspective(1px) translateY(-50%)
+	}
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -1039,6 +1045,12 @@ ul.icon-list li i {
         -o-transform: perspective(1px) translateY(0);
         transform: perspective(1px) translateY(0)
     }
+	.portfolio-item .pos-vertical-center {
+	    -webkit-transform: perspective(1px) translateY(-50%);
+	    -moz-transform: perspective(1px) translateY(-50%);
+	    -o-transform: perspective(1px) translateY(-50%);
+	    transform: perspective(1px) translateY(-50%)
+	}
 }
 
 .blockquote,
@@ -6291,17 +6303,43 @@ a.next-section:hover {
 
 .portfolio--zoom a {
     display: inline-block;
-    position: relative
+    position: relative;
+	height: 10em;
+	width: 100%;
+	margin-bottom: -30px;
 }
 
+.portfolio--zoom a:before, .portfolio--zoom a:after {
+	transition: width 0.1s linear, height 0.1s linear, margin 0.1s linear;
+	transition-delay: 0.2s, 0.2s, 0.2s;
+}
 .portfolio--zoom a:before {
     position: absolute;
     content: "";
-    left: -10px;
-    top: 0;
+    left: 50%;
+    top: 50%;
     width: 20px;
     height: 1px;
-    background-color: #1bb580
+    background-color: #1bb580;
+	margin: 0 0 0 -10px;
+}
+.portfolio--zoom a:hover:before {
+	width: 40px;
+	margin: 0 0 0 -20px;
+}
+.img-gallery-item-expand-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: -16px 0 0 53px;
+    color: white;
+	transition: color 0.1s linear;
+}
+.portfolio--zoom a:hover .img-gallery-item-expand-text {
+	color: #1bb580;
+	transition: color 0.1s linear;
+	transition-delay: 0.2s;
 }
 
 .portfolio--zoom a:after,
@@ -6313,9 +6351,32 @@ a.next-section:hover {
 
 .portfolio--zoom a:after {
     position: absolute;
-    top: -10px;
+	left: 50%;
+    top: 50%;
     width: 1px;
-    height: 20px
+    height: 20px;
+	margin: -10px 0 0 0;
+}
+.portfolio--zoom a:hover:after {
+	height: 40px;
+	margin: -20px 0 0 0;
+}
+
+.mfp-figure.for-before-after:after, .for-before-after.mfp-figure:after {
+	display: none;
+}
+.mfp-title.for-before-after, .for-before-after .mfp-title {
+	width: 900px;
+	margin: 0 auto;
+}
+.mfp-inline-holder .mfp-close {
+    color: #FFF;
+    text-align: right;
+    padding-right: 6px;
+    width: 900px;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%,0px);
 }
 
 .col-md-5ths.portfolio-item .portfolio--title h4 {

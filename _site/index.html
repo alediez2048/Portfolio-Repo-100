@@ -73,6 +73,7 @@
 
   <div id="wrapper" class="wrapper clearfix">
 <header id="navbar-spy" class="header header-1 header-transparent header-bordered header-fixed">
+
   <nav id="primary-menu" class="navbar navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -204,6 +205,7 @@
 
   </nav>
 
+
 </header>
 
 
@@ -211,15 +213,15 @@
 <!--- Hero Section ====================================== -->
 
 <section id="slider" class="slider slider-dark">
-              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(/assets/Working-Space/snapshots/Working-Space.jpg);"></div>
-              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="/assets/Working-Space/snapshots/Working-Space.jpg">
+              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(/assets/Very-Open-Space/snapshots/Very-Open-Space.jpg);"></div>
+              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="/assets/Very-Open-Space/snapshots/Very-Open-Space.jpg">
               </video>
         <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function() {
           setTimeout(function(){
             document.querySelector('#slider video').innerHTML = `
-              <source src="/assets/Working-Space/MP4/Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-              <source src="/assets/Working-Space/WEBM/Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="/assets/Very-Open-Space/MP4/Very-Open-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="/assets/Very-Open-Space/WEBM/Very-Open-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
             `;
           }, 5*1000);
         });
@@ -769,6 +771,17 @@ padding-top:50px;
 					<div class="portfolio--hover">
 						<div class="portfolio--action">
 							<div class="pos-vertical-center">
+
+
+
+
+									<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/1.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/test-before.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/test-after.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+									</div> 
 
                                 <div class="portfolio--title">
 									<h4><a href="https://www.stratatrust.com/">Strata Trust</a></h4>
@@ -1394,7 +1407,8 @@ padding-top:50px;
 		"/revolution/css/settings.css",
 		"/revolution/css/layers.css",
 		"/revolution/css/navigation.css",
-		"https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif"
+		"https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif",
+		"/css/before-after.css"
 	];
 	files.forEach(function(href){
 		var node = document.createElement("link");
@@ -1426,6 +1440,7 @@ padding-top:50px;
 <script type="text/javascript" src="/js/lunr.min.js"></script>
 <script type="text/javascript" src="/js/lunr-feed.js"></script>
 <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script type="text/javascript" src="/js/before-after.js" defer></script>
 <!-- RS Configration JS Files -->
 <script src="/js/rsconfig.js"></script>
 
@@ -1504,8 +1519,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 });
 </script>
-
-
 
 
 </html>
