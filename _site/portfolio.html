@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+      <meta charset="utf-8">
+	  <title>Latin Digital - Alejandro Diez</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--IE Compatibility Meta-->
+      <meta name="author" content="zytheme"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Latin Digital - Alejandro Diez">
+      <meta name="keywords" content="Product Development Digital Marketing UX UI">
+      <link href="/assets/images/favicon/favicon.png" rel="icon">
+
+
+      <!-- G-Suite Metatag -->
+      <meta name="google-site-verification" content="lGL0ars_GTR5x6kkKBeqdPhl6SPVgoPXt7yaTAWJIok" />
+      <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
+
+	  <!-- https://developers.google.com/web/fundamentals/performance/resource-prioritization#preconnect -->
+<!-- 	  <link rel="preconnect" href="https://translate.googleapis.com">
+	  <link rel="dns-prefetch" href="https://translate.googleapis.com"> -->
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118145960-1"></script> -->
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118145960-1');
+      </script>
+	  <!--link rel="preload" href="../fonts/fontawesome-webfont.woff2?v=4.6.3" as="style" /-->
+	  <script type="text/javascript">
+		  function deferImages(node, alwaysRecheck) {
+		  		document.addEventListener("DOMContentLoaded", function(event) {
+		  			var loaded = false;
+		  			check();
+		  			function load() {
+		  				loaded = true;
+		  				Array.from(node.querySelectorAll('img[data-src]')).forEach(node=>{
+		  					node.src = node.getAttribute("data-src");
+							node.removeAttribute("data-src");
+		  				})
+		  			}
+		  			function check() {
+		  				if (loaded && !alwaysRecheck) return;
+		  				if (checkViewport()) {
+		  					load();
+		  				}
+		  				setTimeout(check, 50);
+		  			}
+		  			function checkViewport() {
+		  				var topOfViewport = Math.floor(node.getBoundingClientRect().top);
+		  				var viewportHeight = Math.floor(Math.min(
+		  					document.body.clientHeight || 0,
+		  					document.documentElement.clientHeight || 0
+		  				));
+		  				if (viewportHeight<500) viewportHeight = 500;
+		  				return topOfViewport < viewportHeight;
+		  			}
+		  		});
+		  }
+
+	  </script>
+
+    </head>
+
+
+    <body>
+  <div id="wrapper" class="wrapper clearfix">
+<header id="navbar-spy" class="header header-1 header-transparent header-bordered header-fixed">
+
+  <nav id="primary-menu" class="navbar navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="logo" href="/index.html">
+          <img class="logo-light" src=/assets/images/logo/digitalLogo_light.png alt="League Logo">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+          <ul class="nav navbar-nav nav-pos-right navbar-left">
+
+                <!-- Home Menu -->
+                <li class="has-dropdown mega-dropdown active">
+                  <a href="/index.html">Home</a>
+                </li>
+
+                <li class="has-dropdown">
+                  <a href="/portfolio.html">Portfolio</a>
+                </li>
+                <!-- li end -->
+
+                <!-- Portfolio Menu -->
+                <li class="has-dropdown mega-dropdown">
+                  <a href="/blog/">Blog</a>
+                </li>
+
+                <!-- Social Media -->
+                <li class="has-dropdown">
+                  <a href="/team.html">Team</a>
+                </li>
+                <!-- li end -->
+
+                <!-- Projects + Orgs -->
+                <li class="has-dropdown mega-dropdown">
+                  <a href="/process.html">Process</a>
+                </li>
+
+                <li class="has-dropdown mega-dropdown">
+                  <a href="/contact-page.html">Contact</a>
+                </li>
+
+           </ul>
+
+        <!-- .module-cart end -->
+        <!-- Module Search -->
+        <div class="module module-search pull-left">
+          <div class="module-icon search-icon">
+            <i class="fa fa-search"></i>
+            <span class="title">search</span>
+          </div>
+          <div class="module-content module-fullscreen module--search-box">
+            <div class="pos-vertical-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                  <form class="form-search" autocomplete="off">
+                    <input id="search-nav" type="search" class="form-control" placeholder="Search&hellip;" autocomplete="off" aria-label="Search" title="Search">
+                    <button class="btn" type="button"><i class="fa fa-search"></i><span class="for-readers">Search</span></button>
+                  </form><!-- .form-search end -->
+                </div><!-- .col-md-8 end -->
+              </div><!-- .row end -->
+            </div><!-- .container end -->
+          </div>
+          <div class="container container-nav">
+            <div class="row">
+              <div id="results-nav" class="all-posts results col-xs-12 col-sm-12 col-md-12"><span class="for-readers">Close</span></div>
+            </div>
+          </div>
+
+            <a class="module-cancel" href="#"><i class="fa fa-close"></i><span class="for-readers">close</span></a>
+          </div>
+
+        </div><!-- .module-search end -->
+        <!-- Module Side NAV -->
+<!--         <div class="module module-side-nav pull-left">
+
+          <div class="module-icon side-nav-icon">
+            <i class="fa fa-bars"></i>
+            <span class="title">Side Navigation</span>
+          </div>
+          <div class="module-content module-hamburger bg-overlay bg-overlay-dark2" style="display:none">
+            <div class="hamburger-panel ">
+<div>
+  <a class="logo" href="/index.html">
+    <img src=/assets/images/logo/digitalLogo_light.png alt="League Logo">
+  </a>
+</div>
+  <ul class="list-unstyled list-links">
+    <li><a href="/index.html">Home</a>
+    </li>
+    <li><a href="/portfolio.html">Portfolio</a>
+    </li>
+    <li><a href="/blog/">Blog</a>
+    </li>
+    <li><a href="/social-media.html">Social Media</a>
+    </li>
+    <li><a href="/studycases.html">Study Cases</a>
+    </li>
+    <li><a href="/contact-page.html">Contact</a>
+    </li>
+  </ul>
+<div class="clearfix"></div>
+  <div class="social-share">
+    <a class="share-facebook" href=""><i class="fa fa-facebook"></i><span class="for-readers">Share on Facebook</span></a>
+    <a class="share-twitter" href=""><i class="fa fa-twitter"><span class="for-readers">Share on Twitter</span></i></a>
+    <a class="share-google-plus" href=""><i class="fa fa-github"></i><span class="for-readers">Share on G+</span></a>
+    <a class="share-linkedin" href=""><i class="fa fa-linkedin"></i><span class="for-readers">Share on LinkedIn</span></a>
+  </div>
+  <div class="clearfix"></div>
+  <div class="copywright">
+    <span>&copy; 2018</span><a></a>
+  </div>
+<a class="module-cancel" href="#"><i class="fa fa-close"></i><span class="for-readers">Close</span></a>
+</div>          </div>
+        </div> -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+
+
+  </nav>
+
+
+</header>
+
+
+
+
+<section id="page-title" class="page-title bg-overlay bg-overlay-dark3">
+              <div class="element-with-video-bg jquery-background-video-wrapper" style="background-image: url(/assets/Spacious/snapshots/Spacious.jpg);"></div>
+              <video data-bgvideo="true" autoplay loop muted class="my-background-video jquery-background-video" poster="/assets/Spacious/snapshots/Spacious.jpg">
+                  <source src="/assets/Spacious/MP4/Spacious.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                  <source src="/assets/Spacious/WEBM/Spacious.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              </video>
+<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+				<div class="title title-2 text-center">
+					<div class="title--content">
+						<div class="title--heading">
+							<h1>See our Work</h1>
+						</div>
+						<div class="title--desc">
+							<p>Our Agency Portfolio includes collaborations with various agencies and previous agency work. 
+							</p>
+							<br>
+							<br>
+							<br>
+						</div>
+					<ol class="breadcrumb">
+						<li><a href="https://www.latindigital.io">Home</a></li>
+						<li class="active">Portfolio</li>
+					</ol>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- .title end -->
+			</div>
+			<!-- .col-md-12 end -->
+		</div>
+
+		<center><a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a></center>
+		<!-- .row end -->
+	</div>
+	<!-- .container end -->
+</section> <!-- #page-title end -->
+
+<br>
+
+<!--div class="before-after">
+	<div class="before-after-wrapper" draggable="false">
+		<div class="before-after-before">
+			<img class="before-after-content-image" src="/assets/images/portfolio/before-after/test-before.jpg" draggable="false"/>
+		</div>
+		<div class="before-after-after">
+			<img class="before-after-content-image" src="/assets/images/portfolio/before-after/test-after.jpg" draggable="false"/>
+		</div>
+		<div class="before-after-scroller">
+			<svg class="before-after-scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>
+		</div>
+	</div>
+</div-->
+<style> body{background-color:#ffffff; overflow:hidden;}
+
+html body [data-ca3_iconfont="ETmodules"]::before {
+    font-family: "ETmodules";
+}
+[data-ca3_icon]::before {
+    font-weight: normal;
+    content: attr(data-ca3_icon);
+}
+
+.ca3-scroll-down-arrow {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+  height: 60px;
+  width: 80px;
+  margin: 0px 0 0 -40px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  color: #FFF;
+  text-align: center;
+  font-size: 70px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+  -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  -moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+  animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+.before-after {
+	margin: 50px 0;
+}
+.before-after *{
+	box-sizing: border-box;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.before-after-wrapper{
+	width: 850px;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	overflow:hidden;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	max-width: 96vw;
+	max-height: 96vw;
+}
+
+/* Our image information */
+.before-after-before,
+.before-after-after {
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	top:0;
+	left:0;
+	pointer-events:none;
+	overflow: hidden;
+}
+
+.before-after-content-image{
+	height:100%;
+}
+
+.before-after-after{
+	width:125px;
+}
+
+.before-after-scroller{
+	width: 50px;
+	height:50px;
+	position: absolute;
+	left:100px;
+	top:50%;
+	transform:translateY(-50%);
+	border-radius:50%;
+	background-color: transparent;
+	opacity:0.9;
+	pointer-events:auto;
+	cursor: pointer;
+}
+
+.before-after-scroller:hover{
+	opacity:1;
+}
+
+.before-after-scrolling{
+	pointer-events:none;
+	opacity:1;
+	// z-index: 1;
+}
+
+.before-after-scroller__thumb{
+	width:100%;
+	height:100%;
+	padding:5px;
+}
+
+.before-after-scroller:before,
+.before-after-scroller:after{
+	content:" ";
+	display: block;
+	width: 7px;
+	height: 9999px;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.5px;
+	z-index: 30;
+	transition:0.1s;
+}
+.before-after-scroller:before, .before-after-scroller:after {
+	/* border: 0px solid #666; */
+	/* border-width: 0px 1px; */
+}
+.before-after-scroller:before{
+	top:100%;
+}
+.before-after-scroller:after{
+	bottom:100%;
+}
+
+/* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
+.before-after-scroller{
+	/* border: 5px solid #fff; */
+	background: #fff;
+}
+.before-after-scroller:before,
+.before-after-scroller:after{
+	background: #fff;
+}
+.before-after .before-after-scroller, .before-after .before-after-scroller:before, .before-after .before-after-scroller:after {
+	transition: background-color 0.5s linear;
+}
+.before-after.is-new .before-after-scroller, .before-after.is-new .before-after-scroller:before, .before-after.is-new .before-after-scroller:after {
+	background: #086e4b;
+}
+.before-after .before-after-scroller__thumb {
+	transition: width 0.5s linear, height 0.5s linear, margin 0.5s linear;
+}
+.before-after.is-new .before-after-scroller__thumb {
+	width: 200%;
+	height: 110%;
+	margin-left: -50%;
+	margin-top: -5%;
+}
+</style>
+<script type="text/javascript">
+function beforeAfterCheck(inside) {
+	// https://codepen.io/nosurprisethere/pen/xrXjYV
+	Array.from((inside||document).querySelectorAll('.before-after')).forEach(function(container) {
+		beforeAfterCheck_once(container);
+	});
+}
+function beforeAfterCheck_once(container) {
+	// https://codepen.io/nosurprisethere/pen/xrXjYV
+	if (!beforeAfterCheck_once._container) beforeAfterCheck_once._container = [];
+	if (beforeAfterCheck_once._container.indexOf(container)>-1) return;
+	beforeAfterCheck_once._container.push(container);
+	console.log(container);
+	var active = false;
+	setTimeout(function() {
+		if (active) return;
+		if (container) container.classList.add('is-new');
+	}, 1*1000);
+	setTimeout(function() {
+		if (container) container.classList.remove('is-new');
+	}, 3*1000);
+	var scroller = container.querySelector('.before-after-scroller');
+	scroller.addEventListener('mousedown',function(){
+		if (!scroller) return;
+		active = true;
+		// Add our scrolling class so the scroller has full opacity while active
+		scroller.classList.add('scrolling');
+	});
+	document.body.addEventListener('mouseup',function(){
+		if (!scroller) return;
+		active = false;
+		scroller.classList.remove('scrolling');
+	});
+	document.body.addEventListener('mouseleave',function(){ // khm)
+		if (!scroller) return;
+		active = false;
+		scroller.classList.remove('scrolling');
+	});
+	document.body.addEventListener('mousemove',function(e){
+		if (!scroller) return;
+		if (!active) return;
+		// Their mouse is here...
+		let x = e.pageX;
+		// but we want it relative to our wrapper
+		x -= container.querySelector('.before-after-wrapper').getBoundingClientRect().left;
+		// Okay let's change our state
+		scrollIt(x);
+	});
+	function scrollIt(x){
+		let transform = Math.max(0,(Math.min(x,container.querySelector('.before-after-wrapper').offsetWidth)));
+		container.querySelector('.before-after-after').style.width = transform+"px";
+		container.querySelector('.before-after-scroller').style.left = transform-25+"px";
+	}
+	scroller.addEventListener('touchstart',function(){
+		if (!scroller) return;
+		active = true;
+		scroller.classList.add('scrolling');
+	}, {passive: true});
+	document.body.addEventListener('touchend',function(e){
+		if (!scroller) return;
+		active = false;
+		scroller.classList.remove('scrolling');
+		e.preventDefault();
+	}, {passive: false});
+	document.body.addEventListener('touchcancel',function(){
+		if (!scroller) return;
+		active = false;
+		scroller.classList.remove('scrolling');
+	});
+	document.body.addEventListener('touchmove',function(e){
+		if (!scroller) return;
+		if (!active) return;
+		e.preventDefault();
+	}, {passive: false});
+	document.body.addEventListener('touchmove',function(e){
+		if (!scroller) return;
+		if (!active) return;
+		// Their mouse is here...
+		let x = ((e.changedTouches||e.touches)[0]||{}).pageX;
+		if (!x) return;
+		// but we want it relative to our wrapper
+		x -= container.querySelector('.before-after-wrapper').getBoundingClientRect().left;
+		// Okay let's change our state
+		scrollIt(x);
+	});
+	scrollIt(150);
+}
+beforeAfterCheck();
+</script>
+
+        <div class="heading heading-2 mb-50 text--center">
+          <p class="heading--subtitle">Check out our</p>
+          <h2 class="heading--title heding--center">Before and After Examples</h2>
+          <div class="divider--line divider--center"></div>
+        </div>
+
+	<!-- Portfolio 3 Column
+============================================= -->
+<section id="portfolio" class="portfolio portfolio-grid portfolio-3col pt-70 bg-white">
+	<div class="container">
+		<div class="row">
+			<!-- Portfolio Filter
+			============================================= -->
+			<div class="col-xs-12 col-sm-12 col-md-12 portfolio-filter">
+				<ul class="list-inline mb-0">
+					<li><a class="active-filter" href="#" data-filter="*">All</a></li>
+					<li><a href="#" data-filter=".filter-branding">Campaign</a></li>
+					<li><a href="#" data-filter=".filter-packaging">Product</a></li>
+					<li><a href="#" data-filter=".filter-print">Full Stack</a></li>
+					<li><a href="#" data-filter=".filter-web">Web Development</a></li>
+				</ul>
+			</div>
+			<!-- .Portfolio-filter end -->
+		</div>
+		<div id="portfolio-all">
+			<!-- Portfolio #1 -->
+
+			<!-- Portfolio #2 -->
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/1.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/after-clearesult.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/before-clearesult.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/2.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/after-strata.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/before-strata.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/3.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/before-springbox.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/after-springbox.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/4.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/before-zephy.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/after-zephy.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/5.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/before-polandspring.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/after-polandspring.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/6.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/before-arrowhead.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/after-arrowhead.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/7.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/before-dhms.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/after-dhms.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/8.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/before-sweet.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/after-sweet.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+
+			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/9.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a
+										class="img-gallery-item" href="assets/images/portfolio/full/2.jpg" data-title="Portfolio Item"
+										data-before-after-before="/assets/images/portfolio/before-after/before-madison.jpg"
+										data-before-after-after="/assets/images/portfolio/before-after/after-madison.jpg"
+									><span class="img-gallery-item-expand-text">Preview</span></a>
+
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="https://www.stratatrust.com/">Strata</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Web Development</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end -->
+
+
+
+
+
+<section id="clients" class="clients clients-carousel bg-white">
+
+	        <div class="heading heading-2 mb-50 text--center">
+          <p class="heading--subtitle">Here are some of</p>
+          <h2 class="heading--title heding--center">Our top Technology Choices</h2>
+          <div class="divider--line divider--center"></div>
+        </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="carousel carousel-dots" data-slide="6" data-slide-rs="2" data-autoplay="true" data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="3000">
+			<!-- Client #1 -->
+				<div class="client">
+					<img class="center-block" src="assets/images/clients/1.jpg" alt="client">
+				</div>
+
+			<!-- Client #2 -->
+				<div class="client">
+					<img class="center-block" src="assets/images/clients/2.jpg" alt="client">
+				</div>
+			
+			<!-- Client #3 -->
+				<div class="client">
+					<img class="center-block" src="assets/images/clients/3.jpg" alt="client">
+				</div>
+			
+			<!-- Client #4 -->
+				<div class="client">
+					<img class="center-block" src="assets/images/clients/4.jpg" alt="client">
+				</div>
+			
+			<!-- Client #5 -->
+				<div class="client">
+					<img class="center-block" src="assets/images/clients/5.jpg" alt="client">
+				</div>
+			
+			<!-- Client #6 -->
+				<div class="client">
+					<img class="center-block" src="assets/images/clients/6.jpg" alt="client">
+				</div>
+				</div>
+			</div><!-- .col-md-12 end -->
+		</div>
+		<!-- .row end -->
+	</div>
+	<!-- .container end -->
+</section>
+<!-- #clients end -->
+
+
+
+			<!-- Portfolio #10 -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/10.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a class="img-gallery-item" href="assets/images/portfolio/full/10.jpg" title="As a requirement for a core digital media class at UT Austin, myself and a group of advertising and PR students created a marketing brief with suggestions for the expansion of a popular organic Mexican food joint in Austin TX. The case implied a potential new branch of Taco Deli in Portland Oregon and a thorough assessment of the best options for targeting the Portland market."></a>
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="#">Taco Deli</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Branding</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end --> -->
+
+			<!-- Portfolio #11 -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/11.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a class="img-gallery-item" href="assets/images/portfolio/full/11.jpg" title="Mellow Johnny's isone of Austin's favorite venues for bikers. Located Down Town it provides a wide range of services to bike enthusiasts from locker rooms to  bike repair and maintenance. My team and I were tasked to create a year long digital ad strategy for attracting customers from different Travis county regions."></a>
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="#">Mellow Johnny's</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Branding</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end --> -->
+
+						<!-- Portfolio #12 -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding">
+				<div class="portfolio--img">
+					<img src="assets/images/portfolio/grid/3col/12.jpg" alt="Portfolio Item">
+					<div class="portfolio--hover">
+						<div class="portfolio--action">
+							<div class="pos-vertical-center">
+								<div class="portfolio--zoom">
+									<a class="img-gallery-item" href="assets/images/portfolio/full/12.jpg" title="A local startup in Austin called Healthy Dog Gourmet is trying to increase sales through digital presence. Me and a team of ad majors created a comprehensive marketing strategy that would allow for the new brand of organic dog food to reach out to consumers in a cost effective manner through social media, event sponsorship and SEO"></a>
+									</div>
+									<div class="portfolio--title">
+									<h4><a href="#">Healthy Dog Gourmet</a></h4>
+								</div>
+								<div class="portfolio--cat">
+									<a href="#">Branding</a>
+								</div>
+							</div>
+						</div><!-- .Portfolio-action end -->
+					</div><!-- .Portfolio-hover end -->
+				</div><!-- .Portfolio-img end -->
+			</div><!-- . portfolio-item end --> -->
+
+            <!-- Jekyll loop for assets\images\portfolio\grid\3col -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding filter-print">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/13.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/13.jpg" title="View of my screen"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">View of my screen</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Campaign</a>,<a href="#">Full Stack</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/14.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/14.jpg" title="Spa treatment in your home"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">Spa treatment in your home</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Web Development</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-print">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/15.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/15.jpg" title="Printing is an Art"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">Printing is an Art</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Full Stack</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding filter-print">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/16.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/16.jpg" title="View of my screen"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">View of my screen</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Campaign</a>,<a href="#">Full Stack</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/17.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/17.jpg" title="Web development agency"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">Web development agency</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Web Development</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-web">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/18.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/18.jpg" title="Web dev in 2018"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">Web dev in 2018</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Web Development</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-branding filter-print">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/19.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/19.jpg" title="Branding development"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">Branding development</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Campaign</a>,<a href="#">Full Stack</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-packaging">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/20.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/20.jpg" title="Spa treatment in your home"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">Spa treatment in your home</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Packaging</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+
+            <!-- Portfolio #xx -->
+          <!--   <div class="hiddenItem col-xs-12 col-sm-6 col-md-4 portfolio-item filter-print">
+                <div class="portfolio--img">
+                    <img src="/assets/images/portfolio/grid/3col/more/21.jpg" alt="Portfolio Item">
+                    <div class="portfolio--hover">
+                        <div class="portfolio--action">
+                            <div class="pos-vertical-center">
+                                <div class="portfolio--zoom">
+                                    <a class="img-gallery-item" href="/assets/images/portfolio/grid/3col/more/21.jpg" title="Nice Print title"></a>
+
+                                </div>
+                                <div class="portfolio--title">
+                                    <h4><a href="#">Nice Print title</a></h4>
+                                </div>
+                                <div class="portfolio--cat"><a href="#">Full Stack</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+            <!-- . portfolio-item end -->
+            
+        </div>
+    </div>
+
+    <!-- .container end -->
+</section>
+<!-- #portfolio end -->
+<!-- <div class="row" id="btn-more">
+    <div class="col-xs-12 col-sm-12 col-md-12 text--center mt-30">
+        <a class="btn btn--secondary btn--bordered btn-more" href=""><span></span>Load More</a>
+    </div>
+</div> -->
+
+
+
+
+
+    </body>
+<footer id="footer" class="footer footer-1">
+  <!-- Widget Section  ============================================= -->
+   <!-- Copyrights  ============================================= -->
+  <div class="footer--bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <hr class="divider--footer">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5">
+          <div class="footer--links">
+            <ul class="list-inline mb-0">
+              <li><a href="/index.html">Home het</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/team.html">Team</a></li>
+              <li><a href="/process.html">Process</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-1 col-md-2">
+          <div class="footer--logo text--center">
+            <img src=/assets/images/logo/digitalLogo_light.png alt="logo">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-md-5">
+          <div class="footer--copyright text-right">
+            <span>&copy; 2018, With Love</span><a></a>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- .container end -->
+  </div><!-- .footer-copyright end -->
+</footer>
+ </div><!-- #wrapper end -->
+
+<!-- Stylesheets
+============================================= -->
+<!--
+<link href="/css/external.css" rel="stylesheet" media="all">
+<link href="/css/bootstrap.min.css" rel="stylesheet" media="all">
+<link href="/css/main.css" rel="stylesheet" media="all">
+<link href="/css/patch-lighthouse.css" rel="stylesheet" media="all">
+-->
+
+<!-- RS5.0 Main Stylesheet -->
+<!--
+<link rel="stylesheet" type="text/css" href="/revolution/css/settings.css" media="all">
+<link rel="stylesheet" type="text/css" href="/revolution/css/layers.css" media="all">
+<link rel="stylesheet" type="text/css" href="/revolution/css/navigation.css" media="all">
+-->
+<!-- Fonts
+ 	============================================= -->
+<!--
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif" rel="stylesheet" type="text/css">
+-->
+<script>
+(function(){
+	// Eliminate render-blocking resources
+	// https://developers.google.com/web/tools/lighthouse/audits/blocking-resources
+	var files = [
+		"/css/external.css",
+		"/css/bootstrap.min.css",
+		"/css/main.css",
+		"/css/patch-lighthouse.css",
+		"/revolution/css/settings.css",
+		"/revolution/css/layers.css",
+		"/revolution/css/navigation.css",
+		"https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif",
+		"/css/before-after.css"
+	];
+	files.forEach(function(href){
+		var node = document.createElement("link");
+		node.href = href;
+		node.rel = "stylesheet";
+		document.querySelector('head').appendChild(node);
+	})
+})()
+</script>
+
+
+<!-- Footer Scripts
+============================================= -->
+
+<script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/functions.js"></script>
+<!-- RS5.0 Core JS Files -->
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/lunr-feed.js"></script>
+<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script type="text/javascript" src="/js/before-after.js" defer></script>
+<!-- RS Configration JS Files -->
+<script src="/js/rsconfig.js"></script>
+
+
+
+  <script src="/js/jquery.load-more.js"></script>
+
+
+<!-- Google Translat Script -->
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,es,jv,ko,pa,pt,ru,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- <script type="text/javascript">!function(t,e){"use strict";var r=function(t){try{var r=e.head||e.getElementsByTagName("head")[0],a=e.createElement("script");a.setAttribute("type","text/javascript"),a.setAttribute("src",t),r.appendChild(a)}catch(t){}};t.CollectId = "5b1ebb6cf84ed8347b36c6a9",r("https://collectcdn.com/launcher.js")}(window,document);</script> -->
+
+<!-- Indemandly-->
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+	setTimeout(function() {
+		!function(d){var s=d.createElement('script');s.src='https://widget.indemand.ly/launcher.js';s.onload=function(){window.indemandly = new Indemandly({"domain":"jorge"});};var c=d.getElementsByTagName('script')[0];c.parentNode.insertBefore(s,c);}(document)
+	}, 10*1000);
+});
+</script>
+
+<script type="text/javascript">
+	$(function () {
+		$('#scrollToBottom').bind("click", function () {
+			$('html, body').animate({ scrollTop: $(document).height() }, 4200);
+			return false;
+		});
+		$('#scrollToTop').bind("click", function () {
+			$('html, body').animate({ scrollTop: 0 }, 5200);
+			return false;
+		});
+	});
+</script>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+	setTimeout(function(){
+		var x = retina();
+		if (x>1) {
+			document.querySelectorAll('img[data-img-retina]').forEach(img=>{
+				img.src = img.src.replace("x1.", "x"+x+".");
+			})
+		}
+		function retina() {
+			// http://imulus.github.io/retinajs/
+			// https://stackoverflow.com/questions/28374359/media-queries-for-2x-3x-and-4x-images
+			if (isRetina_3()) return 3;
+			if (isRetina_2()) return 2;
+			return 1;
+		}
+		function isRetina_2(){
+			if (window.devicePixelRatio > 1) return true;
+			var q = '(-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx)';
+	        if (window.matchMedia && window.matchMedia(q).matches) return true;
+		}
+		function isRetina_3(){
+			if (window.devicePixelRatio > 2) return true;
+			var q = '(-o-min-device-pixel-ratio: 9/4), (-webkit-min-device-pixel-ratio: 2.25), (min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx)';
+	        if (window.matchMedia && window.matchMedia(q).matches) return true;
+		}
+	},1*1000);
+});
+</script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+	Array.from(document.querySelectorAll('.module-content.module-hamburger'))
+	.forEach(function(v){
+		v.style.display = "";
+	});
+});
+</script>
+
+
+</html>
