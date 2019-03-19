@@ -11,5 +11,6 @@ paginate_path: "/blog/page:num/"
 plugins:
   # - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 keep_files: [images]
 exclude: ["node_modules", "gulpfile.js", "package.json",".jekyll-metadata","uru_rt.exe"]
