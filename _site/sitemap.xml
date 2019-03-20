@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/jekyll/update/2014/04/20/welcome-to-jekyll.html</loc>
-<lastmod>2014-04-20T04:11:03-05:00</lastmod>
-</url>
-<url>
-<loc>/jekyll/update/2016/07/21/How-to-build-a-quality-portfolio-on-a-budget-copy.html</loc>
-<lastmod>2016-07-21T04:11:03-05:00</lastmod>
-</url>
-<url>
 <loc>/jekyll/update/2016/07/21/test-copy.html</loc>
 <lastmod>2016-07-21T04:11:03-05:00</lastmod>
 </url>
