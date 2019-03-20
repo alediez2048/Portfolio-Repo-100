@@ -98,13 +98,6 @@ index.add({
   image: "6.jpg",
   id: 12
 });
-index.add({
-  title: "How to build a Quality Portfolio on a Budget",
-  category: ["jekyll","update"],
-  content: "Hello Everybody, this is my very first blog and I’m very excited to share with you what I’ve been working on. Having a strong Digital Presence in today’s world is empirical for whatever endeavor you might have, for this reason numerous options for showcasing your work online have come out in an attempt to solve this dilema.\n\nSquarespace, Wix and Shopify are just some of the Brand names that come to mind when you think about creating a website. I personally prefer to think of these engines as great vehicles to “proof of concept”, meaning if you have a project and want to check how it would do online these are great options.\n\nIn the long run however you can run into issues, particularly when it comes to increasing customization and decreasing costs. Squarespace for instance charges around 14$ for personal sites and 20$ for business sites per month. That rounds up to 140$ and 240$ respectively per year. If you add on top of that hosting costs, typically ranging around 100$ and 150$ and a year that number comes up to 400$. If on top of that we want to start selling products through your website, which at Shopify does for as much as 29$ a month for the most basic plan and charge a 5% per transaction, you get the point.\n\nFurtheremore, what do you do when you want to add a feature to your site that is not supported by Squarespace or Shopify? You will have to hire an expert that will charge you just to take a look at your problem and will most likely say you need to redo the whole site.\n\nBuilding your own portfolio from scratch is not easy, but it could save you lots of time and money to learn a couple of things and do it on your own. Th purpose of this blog is to provide you with the tools to Build your own portfolio as easy as possible with the least ammount of struggle.\n\nIn this series I will provide a step by step guide on how to Build Your own site for 200$ and learn in the process.\n",
-  image: "7.jpg",
-  id: 13
-});
 // console.log( jQuery.type(index) );
 // builds reference data
 var store = [{
@@ -198,13 +191,6 @@ var store = [{
   "date": "January 3, 2017",
   "category": ["modern"],
   "excerpt": "The theory was first published in 2005 a press released under the name of Cliff Arnall, who at the time was a tutor at the Centre for Lifelong Learning – a Further Education centre associated with Cardiff University. Later, however,..."
-},{
-  "title": "How to build a Quality Portfolio on a Budget",
-  "link": "/jekyll/update/2016/07/21/test-copy.html",
-  "image": "7.jpg",
-  "date": "July 21, 2016",
-  "category": ["jekyll","update"],
-  "excerpt": "Hello Everybody, this is my very first blog and I’m very excited to share with you what I’ve been working on. Having a strong Digital Presence in today’s world is empirical for whatever endeavor you might have, for this reason..."
 }]
 // builds search
 $(document).ready(function() {
