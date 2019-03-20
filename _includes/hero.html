@@ -42,7 +42,17 @@
                   <br>
 </section>
 
-<style> body{background-color:#000; overflow:hidden;}
+<style> 
+
+
+@media only screen and (max-width: 600px) {
+
+.ca3-scroll-down-link {
+  display:none;
+}
+}
+
+body{background-color:#000; overflow:hidden;}
 
 html body [data-ca3_iconfont="ETmodules"]::before {
     font-family: "ETmodules";
@@ -95,7 +105,12 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   0%   { transform:translate(0,-20px); opacity: 0;  }
   50%  { opacity: 1;  }
   100% { transform:translate(0,20px); opacity: 0; }
-}</style>
+}
+
+
+
+
+</style>
 
 <!-- 
 <section id="slider" class="slider slider-dark">
