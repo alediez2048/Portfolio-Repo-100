@@ -254,8 +254,8 @@
 
 
                       <div class="slide-action" style="text-align:center; padding-bottom:30px;">
-                        <a class="btn btn--secondary btn--white mr-30" href="/blog/">Learn More<span class="for-readers"> in blog</span></a>
-                        <a class="btn btn--white btn--bordered" id="scrollToBottom" href="#">Get Started</a>   </div>
+                        <a class="btn btn--secondary btn--white mr-30" href="/blog/">Get Started<span class="for-readers"> in blog</span></a>
+                        <a class="btn btn--white btn--bordered" id="scrollToBottom" href="#">Learn More</a>   </div>
                   </div>
               </div>
 <center><a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a></center>
@@ -269,7 +269,14 @@
 
 @media only screen and (max-width: 600px) {
 
-.ca3-scroll-down-link {
+.my-background-video .ca3-scroll-down-link {
+  display:none;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+#video {
   display:none;
 }
 }
@@ -378,198 +385,22 @@ function googleTranslateElementInit() {
 
 
 <style>
-
-html {
-  font-size: 1.9em;
-}
 body {
   background-color: #fff;
 
-}
-/* Wrapper */
-.icon-button {
-  background-color: white;
-  border-radius: 2.6rem;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  width: 2.6rem;
-}
+}</style>
 
-/* Circle */
-.icon-button span {
-  border-radius: 0;
-  display: block;
-  height: 0;
-  left: 50%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-       -o-transition: all 0.3s;
-          transition: all 0.3s;
-  width: 0;
-}
-.icon-button:hover span {
-  width: 2.6rem;
-  height: 2.6rem;
-  border-radius: 2.6rem;
-  margin: -1.3rem;
-}
+<section id="workflow" class="workflow">
+	<div class="container">
+    <div class="row">
 
-/* Icons */
-.icon-button i {
-  background: none;
-  color: white;
-  height: 2.6rem;
-  left: 0;
-  line-height: 2.6rem;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-       -o-transition: all 0.3s;
-          transition: all 0.3s;
-  width: 2.6rem;
-  z-index: 10;
-}
-
-
-
-
-
-.twitter span {
-  background-color: #4099ff;
-}
-.facebook span {
-  background-color: #3B5998;
-}
-.google-plus span {
-  background-color: #db5a3c;
-}
-.tumblr span {
-  background-color: #34526f;
-}
-.instagram span {
-  background-color: #517fa4;
-}
-.youtube span {
-  background-color: #bb0000;
-}
-.linkedin span {
-  background-color: #0077b5;
-}
-.github span {
-  background-color: #24292e;
-}
-
-
-
-.icon-button .fa-twitter {
-  color: #4099ff;
-}
-.icon-button .fa-facebook {
-  color: #3B5998;
-}
-.icon-button .fa-tumblr {
-  color: #34526f;
-}
-.icon-button .fa-google-plus {
-  color: #db5a3c;
-}
-.icon-button .fa-instagram {
-  color: #517fa4;
-}
-.icon-button .fa-youtube {
-  color: #bb0000;
-}
-.icon-button .fa-linkedin {
-  color: #0077b5;
-}
-
-
-.icon-button .fa-github {
-  color: #24292e;
-}
-
-
-.icon-button:hover .fa-twitter,
-.icon-button:hover .fa-facebook,
-.icon-button:hover .fa-google-plus,
-.icon-button:hover .fa-tumblr,
-.icon-button:hover .fa-instagram,
-.icon-button:hover .fa-youtube,
-.icon-button:hover .fa-pinterest,
-.icon-button:hover .fa-linkedin,
-.icon-button:hover .fa-github
-{
-  color: white;
-}
-
-@media all and (max-width: 680px) {
-  .icon-button {
-    border-radius: 1.6rem;
-    font-size: 0.8rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    width: 1.6rem;
-  }
-
-  .icon-button:hover span {
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 1.6rem;
-    margin: -0.8rem;
-  }
-
-  /* Icons */
-  .icon-button i {
-    height: 1.6rem;
-    line-height: 1.6rem;
-    width: 1.6rem;
-  }
-  body {
-
-    padding: 10px;
-  }
-  .pinterest {
-   display: none;
-  }
-
-}
-  
-  @media only screen and (max-width: 600px) {
-
-.workflow {
-  display:none;
-}
-}
-
-</style>
-
-
-<section id="start-with" class="workflow">
-  <div class="container">
-    <div class="row clearfix">
       <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
         <div class="heading heading-2 mb-50 text--center">
           <p class="heading--subtitle">Who we are?</p>
-          <h2 class="heading--title heding--center">Your Technology Partner</h2>
+          <h1 class="heading--title heding--center">Your Technology Partner</h1>
           <div class="divider--line divider--center"></div>
         </div>
       </div><!-- .col-md-8 end -->
-    </div><!-- .row end -->
-    <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6">
         <p class="text-right mb-60">Latin Digital started out with the purpose to bridge the gap between Businesses and their Digital Blue Prints. Our core competency is building custom solutions and support using the latest technologies and frameworks in the industry. </p>
   
@@ -579,68 +410,110 @@ body {
 
       </div>
     </div>
-    <!-- .row end -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="tabs">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
 
-<!-- 
-    <div class="heading heading-2 mb-40 text--center">
-          <p class="heading--subtitle">Start with </p>
-          <h2 class="heading--title">Why </h2>
-          <div class="divider--line divider--center"></div>
-    </div> -->
+					<li class="active"><a href="#Prototype" data-toggle="tab">Free Hosting & SSL</a>
+					</li>
+					<li ><a href="#Brainstorming" data-toggle="tab">Lighthouse Scores</a>
+					</li>
+
+					<li><a href="#Design" data-toggle="tab">Unhackeable Sites</a>
+					</li>
+					<li><a href="#Evaluation" data-toggle="tab">Static CMS</a>
+					</li>
+				</ul>
 
 
-  <div class="container">
-    <div class="row clearfix">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
-      </div><!-- .col-md-8 end -->
-    </div><!-- .row end -->
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="tabs">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#Brainstorming" data-toggle="tab"><span class="for-readers">Brainstorming</span></a>
-          </li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div class="tab-pane fade in active" id="Brainstorming">
-            <div class="row">
-              <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
-                <div class="col-img">
-                  <div class="bg-section">
-                    <img src= /assets/images/workflow/1-min.jpg alt="Background"/>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
-                <div class="col-content bg-white">
-                  <h4 style="font-size: 30px; text-align:center;" >Call me Alex</h4>
-                  <p style="text-align:justify;text-justify=inter-word;">
 
-                    Hello There! My name is Alejandro Diez, I'm a web developer based in Austin Texas and the creator of Latin Digital a full service digital shop. My purpose is to help you and your company successfully tame the web and all it has to offer. To do this me and a dedicated team of developers, designers and project managers have joined forced to build high performing digital products. 
-</p>
+				<!-- Tab panes -->
+				<div class="tab-content">
 
-                  <div class="social-media" style="text-align:center;" id="social-icons">
-                      <a href="https://twitter.com/JAlediez2408" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span><span class="for-readers">TW</span></a>
-                      <a href="https://www.linkedin.com/in/jalejandrodiez/" class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span><span class="for-readers">LI</span></a>
+					<div class="tab-pane fade in active" id="Prototype">
+							<div class="row">
+							<div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+								<div class="col-img">
+									<div class="bg-section">
+										<img src= "assets/images/workflow/7.jpg" alt="Background"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+								<div class="col-content bg-white">
+									<h4>Github Pages and Jekyll</h4>
+									<p>Our Static Website Development is powered by Github Pages and Jekyll. Github Pages is a static web-based hosting service that serves websites on a CDN making sites up to 10 times faster than legacy CMS. All Github pages instances also come with SSL certificate included that brings an extra level of security to our clients. </p>
+									<a class="btn btn--primary mt-20" href="https://pages.github.com/">Read More</a>
+								</div>
+							</div>
+						</div><!-- .row end -->
+					</div><!-- .tab-pane end -->
+					<div class="tab-pane " id="Brainstorming">
+						<div class="row">
+							<div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+								<div class="col-img">
+									<div class="bg-section">
+										<img src= "assets/images/workflow/111.jpg" alt="Background"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+								<div class="col-content bg-white">
+									<h4 style="font-size: 30px; text-align:center;" >Lighthouse Development</h4>
+									<p>Google Lighthouse is an open-source tool for improving the quality of web pages. You can run it against any web page and run audits for performance, accessibility, seo, and more. We benchmark our development process using Google Lighthouse to guarantee top results.</p>
+									<a class="btn btn--primary mt-20" href="https://developers.google.com/web/tools/lighthouse/">Read More</a>
+								</div>
+							</div>
+						</div><!-- .row end -->
+					</div><!-- .tab-pane end -->
 
-                      <a href="https://github.com/alediez2048/" class="icon-button github"><i class="fa fa-github"></i><span></span><span class="for-readers">G+</span></a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- .row end -->
-          </div><!-- .tab-pane end -->
-          </div>
-        </div>
-      </div>
-      <!-- .col-md-12 end -->
-    </div>
-    <!-- .row end -->
-  </div>
-  <!-- .container end -->
+					<div class="tab-pane" id="Design">
+							<div class="row">
+							<div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+								<div class="col-img">
+									<div class="bg-section">
+										<img src= "assets/images/workflow/5.jpg" alt="Background"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+								<div class="col-content bg-white">
+									<h4>Impossible to Hack</h4>
+									<p>There's no reason to have a massive, unwieldy CMS with a database when you are running a fast secure and beautiful static site. With a static site, you don’t have to worry about malicious code being injected into your site when users visit it. Static sites are built on a production machine (probably the machine you are reading this on) by static site generators, which take your code and spit out flat HTML files with CSS and JavaScript </p>
+									<a class="btn btn--primary mt-20" href="#">read more</a>
+								</div>
+							</div>
+						</div><!-- .row end -->
+					</div><!-- .tab-pane end -->
+					<div class="tab-pane" id="Evaluation">
+							<div class="row">
+							<div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+								<div class="col-img">
+									<div class="bg-section">
+										<img src= "assets/images/workflow/8.jpg" alt="Background"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+								<div class="col-content bg-white">
+									<h4>Static Content Management</h4>
+									<p> A Static CMS allows us to provide our clients a user friendly admin interface to manage all their content. Forestry and Contentful are our top choices for providing a powerful content management experience for our clients SEO purposes.  </p>
+									<a class="btn btn--primary mt-20" href="#">Read More</a>
+								</div>
+							</div>
+						</div><!-- .row end -->
+					</div><!-- .tab-pane end -->
+				</div>
+				</div><!-- .tabs end -->
+			</div>
+			<!-- .col-md-12 end -->
+		</div>
+		<!-- .row end -->
+	</div>
+	<!-- .container end -->
 </section> <!-- #workflow end -->
-
 
 <style>
 
@@ -1001,7 +874,7 @@ padding-top:50px;
 				</div><!-- .Portfolio-img end -->
 			</div><!-- . portfolio-item end -->
 
-						<div class="col-xs-12 col-sm-6 col-md-3 portfolio-item filter-branding">
+			<div class="col-xs-12 col-sm-6 col-md-3 portfolio-item filter-branding">
 				<div class="portfolio--img">
 					<img src="assets/images/portfolio/gallery/3col/defer.png" data-src="assets/images/portfolio/gallery/3col/11.jpg" alt="Portfolio Item">
 					<div class="portfolio--hover">
@@ -1160,7 +1033,7 @@ padding-top:50px;
 			<center><p class="heading--subtitle">Enjoy Free Hosting, Lightning Speed and Unhackeable Sites with our Static Jekyll and Hugo Boilerplates</p></center>
 			</div><!-- .col-md-6 end -->
 			<div class="col-xs-12 col-sm-12 col-md-6">
-				<h3>Free Hosting <br>Lightning Fast  <br>Unhackeable</h3>
+				<h3>Learn about our development process</h3>
 
 
 			</div><!-- .col-md-6 end -->
@@ -1397,7 +1270,7 @@ padding-top:50px;
         <div class="col-xs-12 col-sm-6 col-md-5">
           <div class="footer--links">
             <ul class="list-inline mb-0">
-              <li><a href="/index.html">Home het</a></li>
+              <li><a href="/index.html">Home</a></li>
               <li><a href="/portfolio.html">Portfolio</a></li>
               <li><a href="/blog/">Blog</a></li>
               <li><a href="/team.html">Team</a></li>
