@@ -2,7 +2,7 @@
 layout: post
 title:  "Old cameras can capture images better than nowdays camera!"
 date:   2018-01-02 09:11:03
-thumb: 6.jpg
+thumb: 4.jpg
 categories: [modern, photography]
 ---
 

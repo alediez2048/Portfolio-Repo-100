@@ -2,7 +2,7 @@
 layout: post
 title: "Dealing with non-fast-forward errors"
 date: 2017-11-29 09:11:03
-thumb: 3.jpg
+thumb: 2.jpg
 categories: [git, technology]
 ---
 

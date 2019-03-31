@@ -2,7 +2,7 @@
 layout: post
 title:  "Multiple categories for Jekyll posts"
 date:   2017-12-05 09:11:03
-thumb: 2.jpg
+thumb: 3.jpg
 categories: [jekyll]
 ---
 
