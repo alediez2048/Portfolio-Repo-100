@@ -6291,14 +6291,15 @@ a.next-section:hover {
 
 .portfolio-item .portfolio--cat a:hover,
 .portfolio-item .portfolio--title h4 a:hover {
-    color: #1bb580
+    /*color: #1bb580*/
 }
 
 .portfolio-item .portfolio--cat a {
     color: #1bb580;
     font-size: 13px;
     font-weight: 400;
-    line-height: 1
+    line-height: 1;
+	cursor: default;
 }
 
 .portfolio--zoom .img-gallery-item {
