@@ -14,5 +14,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-minifier
+  - instagram
 keep_files: [images]
 exclude: ["node_modules", "gulpfile.js", "package.json",".jekyll-metadata","uru_rt.exe"]
