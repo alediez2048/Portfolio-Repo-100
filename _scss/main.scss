@@ -6301,19 +6301,20 @@ a.next-section:hover {
     line-height: 1
 }
 
-.portfolio--zoom a {
+.portfolio--zoom .img-gallery-item {
     display: inline-block;
     position: relative;
 	height: 10em;
 	width: 100%;
 	margin-bottom: -30px;
+	cursor: pointer;
 }
 
-.portfolio--zoom a:before, .portfolio--zoom a:after {
+.portfolio--zoom .img-gallery-item:before, .portfolio--zoom .img-gallery-item:after {
 	transition: width 0.1s linear, height 0.1s linear, margin 0.1s linear;
 	transition-delay: 0.2s, 0.2s, 0.2s;
 }
-.portfolio--zoom a:before {
+.portfolio--zoom .img-gallery-item:before {
     position: absolute;
     content: "";
     left: 50%;
@@ -6323,7 +6324,7 @@ a.next-section:hover {
     background-color: #1bb580;
 	margin: 0 0 0 -10px;
 }
-.portfolio--zoom a:hover:before {
+.portfolio--zoom .img-gallery-item:hover:before {
 	width: 40px;
 	margin: 0 0 0 -20px;
 }
@@ -6336,20 +6337,20 @@ a.next-section:hover {
     color: white;
 	transition: color 0.1s linear;
 }
-.portfolio--zoom a:hover .img-gallery-item-expand-text {
+.portfolio--zoom .img-gallery-item:hover .img-gallery-item-expand-text {
 	color: #1bb580;
 	transition: color 0.1s linear;
 	transition-delay: 0.2s;
 }
 
-.portfolio--zoom a:after,
+.portfolio--zoom .img-gallery-item:after,
 .portfolio-single .portfolio--title h3:after {
     content: "";
     left: 0;
     background-color: #1bb580
 }
 
-.portfolio--zoom a:after {
+.portfolio--zoom .img-gallery-item:after {
     position: absolute;
 	left: 50%;
     top: 50%;
@@ -6357,7 +6358,7 @@ a.next-section:hover {
     height: 20px;
 	margin: -10px 0 0 0;
 }
-.portfolio--zoom a:hover:after {
+.portfolio--zoom .img-gallery-item:hover:after {
 	height: 40px;
 	margin: -20px 0 0 0;
 }
@@ -6767,13 +6768,13 @@ a.next-section:hover {
     background-image: linear-gradient(180deg, rgba(27, 26, 26, .22) 0, rgba(11, 123, 84, .22) 0, rgba(11, 123, 84, .22) 29%, rgba(11, 123, 84, .8) 76%, rgba(11, 123, 84, .8) 100%)
 }
 
-.portfolio-hover-2 .portfolio--zoom a:after,
-.portfolio-hover-2 .portfolio--zoom a:before {
+.portfolio-hover-2 .portfolio--zoom .img-gallery-item:after,
+.portfolio-hover-2 .portfolio--zoom .img-gallery-item:before {
     background-color: #fff
 }
 
-.portfolio-hover-2 .portfolio--zoom a:hover:after,
-.portfolio-hover-2 .portfolio--zoom a:hover:before {
+.portfolio-hover-2 .portfolio--zoom .img-gallery-item:hover:after,
+.portfolio-hover-2 .portfolio--zoom .img-gallery-item:hover:before {
     background-color: #282828
 }
 
