@@ -1,7 +1,78 @@
-<footer id="footer" class="footer footer-1">
-  <!-- Widget Section  ============================================= -->
-   <!-- Copyrights  ============================================= -->
-  <div class="footer--bar">
+
+
+<footer id="footer" class="footer footer-1">	
+	<!-- Widget Section
+	============================================= -->
+	<div class="footer-widget">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-3 footer--widget footer--widget-about">
+					<div class="footer--widget-title">
+						<h5>About Us</h5>
+					</div>
+					<div class="footer--widget-content">
+						<p>Our brand promise is simple: to provide powerful digital marketing solutions to small businesses that are looking to build success online.</p>
+						<ul class="list-unstyled mb-0">
+							<li><span>Call US:</span> 002 01065370701</li>
+							<li><span>Email US:</span> ayman@zytheme.com</li>
+						</ul>
+					</div>
+				</div><!-- .col-md-3 end -->
+				<div class="col-xs-12 col-sm-6 col-md-3 footer--widget footer--widget-recent">
+					<div class="footer--widget-title">
+						<h5>Recent Posts</h5>
+					</div>
+					<div class="footer--widget-content">
+						<div class="entry">
+							<div class="entry--title">
+								<a href="https://www.latindigital.io/modern/photography/2018/01/02/old-camera-copy.html">Modern Photography</a>
+							</div>
+							<div>Feb 27, 2017</div>
+						</div><!-- .entry end -->
+						<div class="entry">
+							<div class="entry--title">
+								<a href="https://www.latindigital.io/jekyll/2017/12/05/multiple-categories-for-jekyll-posts-2-copy.html">Multiple Categories for Jekyll Posts</a>
+							</div>
+							<div>Feb 27, 2017</div>
+						</div><!-- .entry end -->
+						<div class="entry">
+							<div class="entry--title">
+								<a href="https://www.latindigital.io/git/technology/2017/11/29/dealing-with-non-fast-forward-errors-2-copy.html">Non fast forward errors</a>
+							</div>
+							<div >Feb 27, 2017</div>
+						</div><!-- .entry end -->
+					</div>
+				</div><!-- .col-md-3 end -->
+				<div class="col-xs-12 col-sm-6 col-md-3 footer--widget widget-instagram">
+					<div class="footer--widget-title">
+						<h5>Instagram</h5>
+					</div>
+					<div class="footer--widget-content">
+						<div id="instafeed" class="instafeed" data-insta-number="6">
+						{% include instagram.html clientId="d45ee045b1084fe7b65b26df561d9db7" userId="7183092421" accessToken="7183092421.1677ed0.98214868b88244949ddf617cfb382527" %}
+						</div>
+					</div>
+				</div><!-- .col-md-3 end -->
+				<div class="col-xs-12 col-sm-6 col-md-3 footer--widget footer--widget-newsletter">
+					<div class="footer--widget-title">
+						<h5>Newsletter</h5>
+					</div>
+					<div class="footer--widget-content">
+						<p>Don’t miss to follow us & subscribe to our new feeds, kindly fill the form below.</p>
+						<form action="https://formspree.io/alejandro@latindigital.io" method="POST" class="form-newsletter">
+							<input type="email" name="email"  placeholder="Subscribe Our Newsletter">
+							<button type="submit"><i class="fa fa-long-arrow-right"></i></button>
+						</form>
+						<div class="clearfix"></div>
+					</div>
+				</div><!-- .col-md-3 end -->
+			</div>
+		</div><!-- .container end -->
+	</div><!-- .footer-widget end -->
+	
+	<!-- Copyrights
+	============================================= -->
+ <div class="footer--bar">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -34,7 +105,7 @@
     </div><!-- .container end -->
   </div><!-- .footer-copyright end -->
 </footer>
- </div><!-- #wrapper end -->
+
 
 <!-- Stylesheets
 ============================================= -->
@@ -182,8 +253,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 });
 </script>
-
-
-
-
 
