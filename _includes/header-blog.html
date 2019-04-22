@@ -10,9 +10,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="logo" href="index-2.html">
-          <img class="logo-light" src="assets/images/logo/logo-light.png" alt="League Logo">
-          <img class="logo-dark" src="assets/images/logo/logo-dark.png" alt="League Logo">
+        <a class="logo" href="{{ "/index.html" | relative_url }}">
+          <img class="logo-dark" src={{ "assets/images/logo/digitalLogo_dark.png" | relative_url }} alt="League Logo">
         </a>
       </div>
 
@@ -22,11 +21,11 @@
 
                 <!-- Home Menu -->
                 <li class="has-dropdown mega-dropdown active">
-                  <a href="{{ "/index/" | relative_url }}">Home</a>
+                  <a href="{{ "/index.html/" | relative_url }}">Home</a>
                 </li>
 
                 <li class="has-dropdown">
-                  <a href="{{ "/portfolio/" | relative_url }}">Portfolio</a>
+                  <a href="{{ "/portfolio.html/" | relative_url }}">Portfolio</a>
                 </li>
                 <!-- li end -->
 
@@ -35,6 +34,9 @@
                   <a href="{{ "/blog/" | relative_url }}">Blog</a>
                 </li>
 
+               <li class="has-dropdown mega-dropdown">
+                  <a href="{{ "/team.html/" | relative_url }}">Team</a>
+                </li>
 
 
                 <!-- Projects + Orgs -->
