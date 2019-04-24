@@ -1,4 +1,4 @@
-  <div id="wrapper" class="wrapper clearfix">
+<div id="wrapper" class="wrapper clearfix">
 <header id="navbar-spy" class="header header-1 header-transparent header-bordered header-fixed">
   <nav id="primary-menu" class="navbar navbar--dark navbar-fixed-top affix-top">
     <div class="container">
@@ -10,8 +10,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="logo" href="{{ "/index.html" | relative_url }}">
-          <img class="logo-dark" src={{ "assets/images/logo/digitalLogo_dark.png" | relative_url }} alt="League Logo">
+        <a class="logo-light" href="{{ "/index.html" | relative_url }}">
+          <img style="width: 55%; height: 120px;" class="logo-light" src={{ "assets/images/logo/image2vector.svg" | relative_url }} alt="League Logo">
+        </a>
+        <a class="logo-dark" href="{{ "/index.html" | relative_url }}">
+          <img style="width: 45%; height: 100px;" class="logo-dark" src={{ "assets/images/logo/image1vector.svg" | relative_url }} alt="League Logo">
+
         </a>
       </div>
 
@@ -21,11 +25,11 @@
 
                 <!-- Home Menu -->
                 <li class="has-dropdown mega-dropdown active">
-                  <a href="{{ "/index.html/" | relative_url }}">Home</a>
+                  <a href="{{ "/index.html" | relative_url }}">Home</a>
                 </li>
 
                 <li class="has-dropdown">
-                  <a href="{{ "/portfolio.html/" | relative_url }}">Portfolio</a>
+                  <a href="{{ "/portfolio.html" | relative_url }}">Portfolio</a>
                 </li>
                 <!-- li end -->
 
@@ -35,7 +39,7 @@
                 </li>
 
                <li class="has-dropdown mega-dropdown">
-                  <a href="{{ "/team.html/" | relative_url }}">Team</a>
+                  <a href="{{ "/team.html" | relative_url }}">Team</a>
                 </li>
 
 
