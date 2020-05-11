@@ -1,94 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
+  <meta charset="utf-8" />
+  <title>Latin Digital - Custom Web Solutions</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--IE Compatibility Meta-->
+  <meta name="author" content="zytheme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Latin Digital - Alejandro Diez" />
+  <meta name="keywords" content="Product Development Digital Marketing UX UI" />
+  <meta property="og:title" content="Latin Digital -  Custom Web Solutions" />
+  <meta property="og:image" content="https://i.imgur.com/MH4RZ77.png" />
+  <meta
+    property="og:description"
+    content="Latin Digital started out with the purpose to bridge the gap between Businesses and their Digital Blue Prints. Our core competency is building custom solutions and providing support that increase conversions using the latest technologies and frameworks in the industry."
+  />
+  <meta property="og:url" content="//www.latindigital.io" />
+  <link href="assets/images/favicon/favicon.png"
+  rel="icon">
+  <style>
+    .preloader {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: fixed;
+      z-index: 99999;
+      background-color: #fff;
+    }
+  </style>
 
-      <meta charset="utf-8">
-	  <title>Latin Digital - Custom Web Solutions
-	  </title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!--IE Compatibility Meta-->
-      <meta name="author" content="zytheme"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Latin Digital - Alejandro Diez">
-      <meta name="keywords" content="Product Development Digital Marketing UX UI">
-	<meta property='og:title' content='Latin Digital -  Custom Web Solutions'/>
-	<meta property='og:image' content='https://i.imgur.com/MH4RZ77.png'/>
-	<meta property='og:description' content='Latin Digital started out with the purpose to bridge the gap between Businesses and their Digital Blue Prints. Our core competency is building custom solutions and providing support that increase conversions using the latest technologies and frameworks in the industry.'/>
-	<meta property='og:url' content='//www.latindigital.io' />
-	
-      <link href="/assets/images/favicon/favicon.png" rel="icon">
+  <!-- G-Suite Metatag -->
+  <meta
+    name="google-site-verification"
+    content="lGL0ars_GTR5x6kkKBeqdPhl6SPVgoPXt7yaTAWJIok"
+  />
+  <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
 
-
-      <!-- G-Suite Metatag -->
-      <meta name="google-site-verification" content="lGL0ars_GTR5x6kkKBeqdPhl6SPVgoPXt7yaTAWJIok" />
-      <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
-
-	  <!-- https://developers.google.com/web/fundamentals/performance/resource-prioritization#preconnect -->
-<!-- 	  <link rel="preconnect" href="https://translate.googleapis.com">
+  <!-- https://developers.google.com/web/fundamentals/performance/resource-prioritization#preconnect -->
+  <!-- 	  <link rel="preconnect" href="https://translate.googleapis.com">
 	  <link rel="dns-prefetch" href="https://translate.googleapis.com"> -->
 
-
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118145960-1"></script>
-<!--       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-		<!-- <script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-118145960-1"
+  ></script>
+  <!--       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+  <!-- <script>
 		  (adsbygoogle = window.adsbygoogle || []).push({
 		    google_ad_client: "ca-pub-6333528492727902",
 		    enable_page_level_ads: true
 		  });
 		</script> -->
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-118145960-1');
-      </script>
-	  <!--link rel="preload" href="../fonts/fontawesome-webfont.woff2?v=4.6.3" as="style" /-->
-	  <script type="text/javascript">
-		  function deferImages(node, alwaysRecheck) {
-		  		document.addEventListener("DOMContentLoaded", function(event) {
-		  			var loaded = false;
-		  			check();
-		  			function load() {
-		  				loaded = true;
-		  				Array.from(node.querySelectorAll('img[data-src]')).forEach(node=>{
-		  					node.src = node.getAttribute("data-src");
-							node.removeAttribute("data-src");
-		  				})
-		  			}
-		  			function check() {
-		  				if (loaded && !alwaysRecheck) return;
-		  				if (checkViewport()) {
-		  					load();
-		  				}
-		  				setTimeout(check, 50);
-		  			}
-		  			function checkViewport() {
-		  				var topOfViewport = Math.floor(node.getBoundingClientRect().top);
-		  				var viewportHeight = Math.floor(Math.min(
-		  					document.body.clientHeight || 0,
-		  					document.documentElement.clientHeight || 0
-		  				));
-		  				if (viewportHeight<500) viewportHeight = 500;
-		  				return topOfViewport < viewportHeight;
-		  			}
-		  		});
-		  }
-
-	  </script>
-	  <!-- Begin Jekyll SEO tag v2.6.0 -->
-<title>privacy | Latin Digital - Custom Web Solutions</title>
-<meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="privacy" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="Latin Digital - Custom Web Solutions" />
-<script type="application/ld+json">
-{"url":"/privacy.html","headline":"privacy","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    </head>
+    gtag('config', 'UA-118145960-1');
+  </script>
+  <!--link rel="preload" href="../fonts/fontawesome-webfont.woff2?v=4.6.3" as="style" /-->
+  <script type="text/javascript">
+    function deferImages(node, alwaysRecheck) {
+      document.addEventListener('DOMContentLoaded', function (event) {
+        var loaded = false;
+        check();
+        function load() {
+          loaded = true;
+          Array.from(node.querySelectorAll('img[data-src]')).forEach((node) => {
+            node.src = node.getAttribute('data-src');
+            node.removeAttribute('data-src');
+          });
+        }
+        function check() {
+          if (loaded && !alwaysRecheck) return;
+          if (checkViewport()) {
+            load();
+          }
+          setTimeout(check, 50);
+        }
+        function checkViewport() {
+          var topOfViewport = Math.floor(node.getBoundingClientRect().top);
+          var viewportHeight = Math.floor(
+            Math.min(
+              document.body.clientHeight || 0,
+              document.documentElement.clientHeight || 0
+            )
+          );
+          if (viewportHeight < 500) viewportHeight = 500;
+          return topOfViewport < viewportHeight;
+        }
+      });
+    }
+  </script>
+</head>
 
 
     <body>
@@ -105,7 +114,7 @@
         <span class="icon-bar"></span>
         </button>
         <a class="logo-light" href="/index.html">
-          <img style="width: 55%; height: 120px;" class="logo-light" src=/assets/images/logo/image2vector.svg alt="League Logo">
+          <img style="width: 55%; height: 120px;" class="logo-light" src=/assets/images/logo/image2vector.svg alt="vincen test">
         </a>
         <a class="logo-dark" href="/index.html">
           <img style="width: 45%; height: 100px;" class="logo-dark" src=/assets/images/logo/image1vector.svg alt="League Logo">
@@ -190,7 +199,7 @@
             <div class="hamburger-panel ">
 <div>
   <a class="logo" href="/index.html">
-    <img src=/assets/images/logo/digitalLogo_light.png alt="League Logo">
+    <img src=assets/images/logo/digitalLogo_light.png alt="League Logo">
   </a>
 </div>
   <ul class="list-unstyled list-links">
@@ -364,8 +373,8 @@ If you feel that we are not abiding by this privacy policy, you should contact u
     </body>
 
 
-<footer id="footer" class="footer footer-1">	
-<!-- 
+<footer id="footer" class="footer footer-1">
+<!--
 	<div class="footer-widget">
 		<div class="container">
 			<div class="row">
@@ -477,7 +486,7 @@ If you feel that we are not abiding by this privacy policy, you should contact u
         </div>
         <div class="col-xs-12 col-sm-1 col-md-2">
           <div class="footer--logo text--center">
-            <img style="width: 95%; height: 200px;" src=/assets/images/logo/image2vector.svg alt="logo">
+            <img style="width: 95%; height: 200px;" src=assets/images/logo/image2vector.svg alt="logo">
           </div>
         </div>
         <div class="col-xs-12 col-sm-5 col-md-5">
@@ -501,7 +510,7 @@ If you feel that we are not abiding by this privacy policy, you should contact u
 
 
 <style>
-	
+
 .footer-widget .footer--widget-content p {
     color: #9b9b9b;
     font-size: 13px;
@@ -520,17 +529,17 @@ a {
 <!-- Stylesheets
 ============================================= -->
 <!--
-<link href="/css/external.css" rel="stylesheet" media="all">
-<link href="/css/bootstrap.min.css" rel="stylesheet" media="all">
-<link href="/css/main.css" rel="stylesheet" media="all">
-<link href="/css/patch-lighthouse.css" rel="stylesheet" media="all">
+<link href="css/external.css" rel="stylesheet" media="all">
+<link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/patch-lighthouse.css" rel="stylesheet" media="all">
 -->
 
 <!-- RS5.0 Main Stylesheet -->
 <!--
-<link rel="stylesheet" type="text/css" href="/revolution/css/settings.css" media="all">
-<link rel="stylesheet" type="text/css" href="/revolution/css/layers.css" media="all">
-<link rel="stylesheet" type="text/css" href="/revolution/css/navigation.css" media="all">
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="all">
+<link rel="stylesheet" type="text/css" href="revolution/css/layers.css" media="all">
+<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" media="all">
 -->
 <!-- Fonts
  	============================================= -->

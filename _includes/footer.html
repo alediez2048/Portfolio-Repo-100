@@ -1,7 +1,7 @@
 
 
-<footer id="footer" class="footer footer-1">	
-<!-- 
+<footer id="footer" class="footer footer-1">
+<!--
 	<div class="footer-widget">
 		<div class="container">
 			<div class="row">
@@ -109,7 +109,7 @@
 
 
 <style>
-	
+
 .footer-widget .footer--widget-content p {
     color: #9b9b9b;
     font-size: 13px;
@@ -150,15 +150,15 @@ a {
 	// Eliminate render-blocking resources
 	// https://developers.google.com/web/tools/lighthouse/audits/blocking-resources
 	var files = [
-		"{{ "css/external.css" | relative_url }}",
-		"{{ "css/bootstrap.min.css" | relative_url }}",
-		"{{ "css/main.css" | relative_url }}",
-		"{{ "css/patch-lighthouse.css" | relative_url }}",
-		"{{ "revolution/css/settings.css" | relative_url }}",
-		"{{ "revolution/css/layers.css" | relative_url }}",
-		"{{ "revolution/css/navigation.css" | relative_url }}",
+		"{{ "/css/external.css" | relative_url }}",
+		"{{ "/css/bootstrap.min.css" | relative_url }}",
+		"{{ "/css/main.css" | relative_url }}",
+		"{{ "/css/patch-lighthouse.css" | relative_url }}",
+		"{{ "/revolution/css/settings.css" | relative_url }}",
+		"{{ "/revolution/css/layers.css" | relative_url }}",
+		"{{ "/revolution/css/navigation.css" | relative_url }}",
 		"https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif",
-		"{{ "css/before-after.css" | relative_url }}"
+		"{{ "/css/before-after.css" | relative_url }}"
 	];
 	files.forEach(function(href){
 		var node = document.createElement("link");
@@ -173,32 +173,32 @@ a {
 <!-- Footer Scripts
 ============================================= -->
 
-<script src="{{ "js/jquery-2.2.4.min.js" | relative_url }}"></script>
-<script src="{{ "js/plugins.js" | relative_url }}"></script>
-<script src="{{ "js/functions.js" | relative_url }}"></script>
+<script src="{{ "/js/jquery-2.2.4.min.js" | relative_url }}"></script>
+<script src="{{ "/js/plugins.js" | relative_url }}"></script>
+<script src="{{ "/js/functions.js" | relative_url }}"></script>
 <!-- RS5.0 Core JS Files -->
-<script type="text/javascript" src="{{ "revolution/js/jquery.themepunch.tools.min.js?rev=5.0" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/jquery.themepunch.revolution.min.js?rev=5.0" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.video.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.slideanims.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.actions.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.layeranimation.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.kenburn.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.navigation.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.migration.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "revolution/js/extensions/revolution.extension.parallax.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/jquery.themepunch.tools.min.js?rev=5.0" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.video.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.slideanims.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.actions.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.layeranimation.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.kenburn.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.navigation.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.migration.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/revolution/js/extensions/revolution.extension.parallax.min.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "/js/lunr.min.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "/js/lunr-feed.js" | relative_url }}"></script>
 <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
 <script type="text/javascript" src="{{ "/js/before-after.js" | relative_url }}" defer></script>
 <!-- RS Configration JS Files -->
-<script src="{{ "js/rsconfig.js" | relative_url }}"></script>
+<script src="{{ "/js/rsconfig.js" | relative_url }}"></script>
 {% if page.type == 'homepage' %}
-  <script src="{{ "js/jquery.background-video.js" | relative_url }}"></script>
+  <script src="{{ "/js/jquery.background-video.js" | relative_url }}"></script>
 {% endif %}
 
 {% if page.type == 'portfolios' %}
-  <script src="{{ "js/jquery.load-more.js" | relative_url }}"></script>
+  <script src="{{ "/js/jquery.load-more.js" | relative_url }}"></script>
 {% endif %}
 
 <!-- Google Translat Script -->
