@@ -1,9 +1,4 @@
 node_modules
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 package-lock.json
->>>>>>> develop
-=======
-package-lock.json
->>>>>>> add1f63e5f4d68a136e5654bb7ab258e237be596
+
+
