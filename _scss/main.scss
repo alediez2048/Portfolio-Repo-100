@@ -1243,68 +1243,22 @@ blockquot {
 .bg-overlay-gradient:before {
   opacity: 0.85;
   background-color: rgba(27, 181, 128, 0.8);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(27, 181, 128, 0.8)),
-    to(rgba(12, 109, 176, 0.8))
-  );
-  background-image: -webkit-linear-gradient(
-    left,
-    rgba(27, 181, 128, 0.8),
-    rgba(12, 109, 176, 0.8)
-  );
-  background-image: -moz-linear-gradient(
-    left,
-    rgba(27, 181, 128, 0.8),
-    rgba(12, 109, 176, 0.8)
-  );
-  background-image: -ms-linear-gradient(
-    left,
-    rgba(27, 181, 128, 0.8),
-    rgba(12, 109, 176, 0.8)
-  );
-  background-image: -o-linear-gradient(
-    left,
-    rgba(27, 181, 128, 0.8),
-    rgba(12, 109, 176, 0.8)
-  );
-  background-image: linear-gradient(
-    left,
-    rgba(27, 181, 128, 0.8),
-    rgba(12, 109, 176, 0.8)
-  );
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(27, 181, 128, 0.8)), to(rgba(12, 109, 176, 0.8)));
+  background-image: -webkit-linear-gradient(left, rgba(27, 181, 128, 0.8), rgba(12, 109, 176, 0.8));
+  background-image: -moz-linear-gradient(left, rgba(27, 181, 128, 0.8), rgba(12, 109, 176, 0.8));
+  background-image: -ms-linear-gradient(left, rgba(27, 181, 128, 0.8), rgba(12, 109, 176, 0.8));
+  background-image: -o-linear-gradient(left, rgba(27, 181, 128, 0.8), rgba(12, 109, 176, 0.8));
+  background-image: linear-gradient(left, rgba(27, 181, 128, 0.8), rgba(12, 109, 176, 0.8));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='rgba(27, 181, 128, 0.8)', endColorStr='rgba(12, 109, 176, 0.8)', gradientType='1');
 }
 
 .bg-overlay-gradient2:before {
   background-color: rgba(27, 181, 128, 0.15);
-  background-image: -webkit-linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
-  background-image: -moz-linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
-  background-image: -ms-linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
-  background-image: -o-linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
-  background-image: linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
+  background-image: -webkit-linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
+  background-image: -moz-linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
+  background-image: -ms-linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
+  background-image: -o-linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
+  background-image: linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='rgba(27, 181, 128, 0.15)', endColorStr='rgba(27, 181, 128, 0.15)', gradientType='1');
 }
 
@@ -1910,22 +1864,8 @@ blockquot {
 
 .btn--icon-gradient i {
   color: #1bb580;
-  background: -webkit-linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
-  background: linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
+  background: -webkit-linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+  background: linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1939,22 +1879,8 @@ blockquot {
 
 .btn--bg-gradient {
   background-color: rgba(27, 26, 26, 0.9);
-  background: -webkit-linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
-  background: linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
+  background: -webkit-linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+  background: linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
 }
 
 .btn--bg-gradient i {
@@ -4182,8 +4108,7 @@ table tbody tr td {
   display: inline-block;
 }
 .navbar-fixed-top.affix .logo {
-  background: transparent url(../assets/images/logo/digitalLogo_dark.png) center
-    center no-repeat;
+  background: transparent url(../assets/images/logo/digitalLogo_dark.png) center center no-repeat;
 }
 .navbar-fixed-top.affix .logo img {
   visibility: hidden;
@@ -5179,10 +5104,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
     margin: -1px 0 0;
     z-index: 1001;
   }
-  li.has-dropdown
-    > ul.dropdown-menu
-    > li.dropdown-submenu:hover
-    > ul.dropdown-menu {
+  li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu:hover > ul.dropdown-menu {
     -webkit-transform: scaleY(1);
     -moz-transform: scaleY(1);
     transform: scaleY(1);
@@ -5213,10 +5135,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
     border: 1px solid #eaeaea;
     padding: 13px 0;
   }
-  li.dropdown-submenu
-    > ul.dropdown-menu
-    > li.has-dropdown
-    > ul.dropdown-menu.left {
+  li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left {
     left: -185px !important;
   }
   .mega-dropdown {
@@ -5268,8 +5187,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 .module-hamburger {
 }
 .module-hamburger.bg-overlay-dark2:before {
-  background: transparent url(../assets/images/background/hamburger.jpg) center
-    center no-repeat;
+  background: transparent url(../assets/images/background/hamburger.jpg) center center no-repeat;
   background-size: cover;
   opacity: 1; /* via view on current site */
 }
@@ -5470,22 +5388,8 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 
 .slider .slide--icons.slider-icons-gradient a i {
   color: #1bb580;
-  background: -webkit-linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
-  background: linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
+  background: -webkit-linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+  background: linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -5502,22 +5406,8 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 
 .slide--icons.slide--icons-gradient a {
   background-color: rgba(27, 26, 26, 0.9);
-  background: -webkit-linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
-  background: linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
+  background: -webkit-linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+  background: linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
 }
 
 .slide--icons.slide--icons-gradient a i {
@@ -5703,21 +5593,9 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 }
 
 .slide-overlay-gradient .slotholder:after {
-  background-image: -webkit-linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
-  background-image: -moz-linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
-  background-image: linear-gradient(
-    to top,
-    rgba(27, 181, 128, 0.8) 0,
-    rgba(12, 109, 176, 0.8) 100%
-  );
+  background-image: -webkit-linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
+  background-image: -moz-linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
+  background-image: linear-gradient(to top, rgba(27, 181, 128, 0.8) 0, rgba(12, 109, 176, 0.8) 100%);
   opacity: 0.8;
 }
 
@@ -7031,22 +6909,8 @@ a.next-section:hover {
 
 .feature-gradient .feature--icon i {
   color: #1bb580;
-  background: -webkit-linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
-  background: linear-gradient(
-    150deg,
-    #1da4cb 0,
-    #1da4cb 2%,
-    #1dcb84 27%,
-    #7bcb1d 58%,
-    #efd631 100%
-  );
+  background: -webkit-linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+  background: linear-gradient(150deg, #1da4cb 0, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -7301,16 +7165,8 @@ a.next-section:hover {
   content: '';
   width: 50%;
   height: 100%;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 0.3) 100%
-  );
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.3) 100%);
   -webkit-transform: skewX(-25deg);
   transform: skewX(-25deg);
 }
@@ -10594,13 +10450,7 @@ footer .widget-instagram .insta-hover i {
 
 .progressbar.progress-gradient .progress-bar {
   background-color: #1bb580;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#1bb580),
-    to(#0c6db0)
-  );
+  background-image: -webkit-gradient(linear, left top, right top, from(#1bb580), to(#0c6db0));
   background-image: -webkit-linear-gradient(left, #1bb580, #0c6db0);
   background-image: -moz-linear-gradient(left, #1bb580, #0c6db0);
   background-image: -ms-linear-gradient(left, #1bb580, #0c6db0);
@@ -11825,10 +11675,7 @@ footer .widget-instagram .insta-hover i {
   color: #00acee;
 }
 
-.header-fixed-side
-  .header--panel
-  .header--panel-social
-  a.share-instagram:hover {
+.header-fixed-side .header--panel .header--panel-social a.share-instagram:hover {
   color: #9b6954;
 }
 
@@ -12550,4 +12397,36 @@ footer .widget-instagram .insta-hover i {
 }
 .navbar-custom {
   background-color: #fff;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .navbar-custom .navbar-toogle {
+    border-color: #282828;
+  }
+  .navbar-custom .navbar-toggle .icon-bar {
+    background-color: #282828;
+  }
+  .navbar-custom .navbar-nav > li > a,
+  .navbar-custom .module .module-icon i {
+    color: #fff !important;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .navbar-custom .navbar-toggle {
+    border-color: #282828;
+  }
+  .navbar-custom .navbar-toggle .icon-bar {
+    background-color: #282828;
+  }
+  .navbar-custom .navbar-nav > li > a,
+  .navbar-custom .module .module-icon i {
+    color: #fff !important;
+  }
+}
+
+.call-us {
+  background-color: #1abc9c !important;
+  padding: 5px;
+  margin: 10px;
 }

@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
-    <body>
-
-{% include loader.html %}
-
-
-{{  content  }}
-
-    </body>
-{% include footer.html %}
-
+  {% include head.html %}
+  <body>
+    {% include header-white.html %} {% include loader.html %} {{ content }}
+  </body>
+  {% include footer.html %}
 </html>
