@@ -247,7 +247,123 @@
 	</div>
 </div> <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> <title>Latin Digital</title> <style type="text/css"> html{ margin: 0; height: 100%; overflow: hidden; } iframe{ position: absolute; left:0; right:0; bottom:0; top:0; border:0; } </style> </head> <body> <iframe id="typeform-full" width="100%" height="100%" frameborder="0" allow="camera; microphone; autoplay; encrypted-media;" src="https://alejandrodiez.typeform.com/to/G3R0O7"></iframe> <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script> </body> </html>
 
-
-
   </body>
+<script>
+(function(){
+	// Eliminate render-blocking resources
+	// https://developers.google.com/web/tools/lighthouse/audits/blocking-resources
+	var files = [
+		"/css/external.css",
+		"/css/bootstrap.min.css",
+		"/css/main.css",
+		"/css/patch-lighthouse.css",
+		"/revolution/css/settings.css",
+		"/revolution/css/layers.css",
+		"/revolution/css/navigation.css",
+		"https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,700i,800%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CPlayfair+Display:400,400i,700,700i,900,900i%7CDroid+Serif",
+		"/css/before-after.css"
+	];
+	files.forEach(function(href){
+		var node = document.createElement("link");
+		node.href = href;
+		node.rel = "stylesheet";
+		document.querySelector('head').appendChild(node);
+	})
+})()
+</script>
+
+
+<!-- Footer Scripts
+============================================= -->
+
+<script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/functions.js"></script>
+<!-- RS5.0 Core JS Files -->
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/lunr-feed.js"></script>
+<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script type="text/javascript" src="/js/before-after.js" defer></script>
+<!-- RS Configration JS Files -->
+<script src="/js/rsconfig.js"></script>
+
+
+
+
+<!-- Google Translat Script -->
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,es,jv,ko,pa,pt,ru,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- <script type="text/javascript">!function(t,e){"use strict";var r=function(t){try{var r=e.head||e.getElementsByTagName("head")[0],a=e.createElement("script");a.setAttribute("type","text/javascript"),a.setAttribute("src",t),r.appendChild(a)}catch(t){}};t.CollectId = "5b1ebb6cf84ed8347b36c6a9",r("https://collectcdn.com/launcher.js")}(window,document);</script> -->
+
+<!-- Indemandly-->
+
+<script>  (function() {     function isMobile() {       try {         return !!(           navigator.userAgent &&           /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)         );       } catch (e) {         return false;       }     }     function onTidioChatApiReady() {   if (!isMobile()) {     window.tidioChatApi.open();   } } if (window.tidioChatApi) { window.tidioChatApi.on("ready", onTidioChatApiReady); } else { document.addEventListener("tidioChat-ready", onTidioChatApiReady); } })(); </script>
+<script src="//code.tidio.co/tgoeqf28gwzwuyquhdprkatdrz3omtyr.js" async></script>
+
+<script type="text/javascript">
+	$(function () {
+		$('#scrollToBottom').bind("click", function () {
+			$('html, body').animate({ scrollTop: $(document).height() }, 4200);
+			return false;
+		});
+		$('#scrollToTop').bind("click", function () {
+			$('html, body').animate({ scrollTop: 0 }, 5200);
+			return false;
+		});
+	});
+</script>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+	setTimeout(function(){
+		var x = retina();
+		if (x>1) {
+			document.querySelectorAll('img[data-img-retina]').forEach(img=>{
+				img.src = img.src.replace("x1.", "x"+x+".");
+			})
+		}
+		function retina() {
+			// http://imulus.github.io/retinajs/
+			// https://stackoverflow.com/questions/28374359/media-queries-for-2x-3x-and-4x-images
+			if (isRetina_3()) return 3;
+			if (isRetina_2()) return 2;
+			return 1;
+		}
+		function isRetina_2(){
+			if (window.devicePixelRatio > 1) return true;
+			var q = '(-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx)';
+	        if (window.matchMedia && window.matchMedia(q).matches) return true;
+		}
+		function isRetina_3(){
+			if (window.devicePixelRatio > 2) return true;
+			var q = '(-o-min-device-pixel-ratio: 9/4), (-webkit-min-device-pixel-ratio: 2.25), (min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx)';
+	        if (window.matchMedia && window.matchMedia(q).matches) return true;
+		}
+	},1*1000);
+});
+</script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+	Array.from(document.querySelectorAll('.module-content.module-hamburger'))
+	.forEach(function(v){
+		v.style.display = "";
+	});
+});
+</script>
 </html>
