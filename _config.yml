@@ -1,13 +1,14 @@
 name: Latin Digital - Custom Web Solutions
 markdown: kramdown
 kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
 repository: 'rendrap/League-Boilerplate'
+permalink: pretty
 paginate: 4
-paginate_path: "/blog/page:num/"
+paginate_path: '/blog/page:num/'
 plugins:
   # - jekyll-feed
   - jekyll-paginate
@@ -15,4 +16,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-minifier
 keep_files: [images]
-exclude: ["node_modules", "gulpfile.js", "package.json",".jekyll-metadata","uru_rt.exe"]
+exclude: ['node_modules', 'gulpfile.js', 'package.json', '.jekyll-metadata', 'uru_rt.exe']

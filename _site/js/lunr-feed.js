@@ -74,63 +74,63 @@ index.add({
 // builds reference data
 var store = [{
   "title": "Old cameras can capture images better than nowdays camera!",
-  "link": "/modern/photography/2018/01/02/old-camera-copy.html",
+  "link": "/modern/photography/2018/01/02/old-camera-copy/",
   "image": "4.jpg",
   "date": "January 2, 2018",
   "category": ["modern","photography"],
   "excerpt": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the..."
 },{
   "title": "Multiple categories for Jekyll posts",
-  "link": "/jekyll/2017/12/05/multiple-categories-for-jekyll-posts-2-copy.html",
+  "link": "/jekyll/2017/12/05/multiple-categories-for-jekyll-posts-2-copy/",
   "image": "3.jpg",
   "date": "December 5, 2017",
   "category": ["jekyll"],
   "excerpt": "If you want to be able to assign posts to multiple categories in Jekyll, here’s one way to do it. In your YAML front matter, you can provide a list of categories like that: categories: [math, cs] Of course, after..."
 },{
   "title": "Dealing with non-fast-forward errors",
-  "link": "/git/technology/2017/11/29/dealing-with-non-fast-forward-errors-2-copy.html",
+  "link": "/git/technology/2017/11/29/dealing-with-non-fast-forward-errors-2-copy/",
   "image": "2.jpg",
   "date": "November 29, 2017",
   "category": ["git","technology"],
   "excerpt": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the..."
 },{
   "title": "New subway line has the most advanced tech in the world",
-  "link": "/technology/city/2017/08/18/new-subway-line-has-the-most-advanced-technology-in-the-world-copy.html",
+  "link": "/technology/city/2017/08/18/new-subway-line-has-the-most-advanced-technology-in-the-world-copy/",
   "image": "1.jpg",
   "date": "August 18, 2017",
   "category": ["technology","city"],
   "excerpt": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone..."
 },{
   "title": "State of 2018 web development",
-  "link": "/modern/2017/07/21/state-of-2018-web-development-copy.html",
+  "link": "/modern/2017/07/21/state-of-2018-web-development-copy/",
   "image": "3.jpg",
   "date": "July 21, 2017",
   "category": ["modern"],
   "excerpt": "Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution. So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet..."
 },{
   "title": "How to become a top freelancer",
-  "link": "/modern/2017/05/18/how-to-become-a-top-freelancer-copy.html",
+  "link": "/modern/2017/05/19/how-to-become-a-top-freelancer-copy/",
   "image": "1.jpg",
-  "date": "May 18, 2017",
+  "date": "May 19, 2017",
   "category": ["modern"],
   "excerpt": "At every tiled on ye defer do. No attention suspected oh difficult. Fond his say old meet cold find come whom. The sir park sake bred. Wonder matter now can estate esteem assure fat roused. Am performed on existence as..."
 },{
   "title": "Four ways to cheer yourself up on Blue Monday!",
-  "link": "/travel/2017/04/24/four-ways-to-cheer-yourself-up-on-blue-monday-copy.html",
+  "link": "/travel/2017/04/24/four-ways-to-cheer-yourself-up-on-blue-monday-copy/",
   "image": "5.jpg",
   "date": "April 24, 2017",
   "category": ["travel"],
   "excerpt": "Blue Monday, which falls on 18 January in 2016, is allegedly the most depressing day of the year. Understandably, tightened purse strings following the festive splurge, time passed since Christmas and failed new year resolutions is not a combination for..."
 },{
   "title": "Review of 5 top supercars",
-  "link": "/modern/2017/02/15/review-5-top-supercars-copy.html",
+  "link": "/modern/2017/02/15/review-5-top-supercars-copy/",
   "image": "8.jpg",
   "date": "February 15, 2017",
   "category": ["modern"],
   "excerpt": "Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at..."
 },{
   "title": "Principles of Engineering in modern era",
-  "link": "/modern/2017/01/03/principles-of-engineering-copy.html",
+  "link": "/modern/2017/01/03/principles-of-engineering-copy/",
   "image": "6.jpg",
   "date": "January 3, 2017",
   "category": ["modern"],
