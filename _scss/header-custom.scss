@@ -1,0 +1,14 @@
+.call-us {
+  margin-top: 1.3em !important;
+  border: solid 2px #306e4c;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 10px !important;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s;
+}
+
+.call-us:hover {
+  background-color: #306e4c !important;
+  transition-delay: 100ms;
+}
