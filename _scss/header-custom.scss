@@ -1,14 +1,41 @@
-.call-us {
+.affix-top li .call-us {
   margin-top: 1.3em !important;
-  border: solid 2px #306e4c;
-  font-size: 18px;
+  background-color: transparent !important;
+  border: solid 2px #fff;
+  font-size: 16px !important;
   width: 100%;
-  padding: 10px 10px !important;
   transition: all 0.5s ease;
+  padding-top: 0em !important;
+  padding-bottom: 2em !important;
   -webkit-transition: all 0.5s;
 }
 
-.call-us:hover {
-  background-color: #306e4c !important;
+.affix-top li .call-us:hover {
+  background-color: #fff !important;
+  border: solid 2px #fff;
   transition-delay: 100ms;
+  color: #086e4b;
+}
+
+.affix li .call-us {
+  color: #086e4b;
+  margin-top: 1.3em !important;
+  background-color: transparent !important;
+  border: solid 2px #086e4b;
+  font-size: 16px !important;
+  width: 100%;
+  transition: all 0.5s ease;
+  padding-top: 0em !important;
+  padding-bottom: 2em !important;
+  -webkit-transition: all 0.5s;
+}
+
+.navbar-custom li .call-us {
+  border: solid 2px #086e4b;
+  color: #086e4b;
+}
+
+.navbar-custom li .call-us:hover {
+  border: solid 2px #086e4b;
+  color: #086e4b;
 }
